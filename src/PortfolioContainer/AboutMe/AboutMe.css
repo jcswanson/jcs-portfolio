@@ -1,0 +1,111 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+.about-me-parent {
+    max-width: 1100px;
+    width: 85%;
+}
+
+.about-me-card {
+    display: flex;
+    width: 100%;
+    background-color: var(--drk-space);
+    border-radius: 2rem;
+    box-shadow: 3px 3px 15px 4px var(--gray);
+}
+
+.about-me-profile {
+    width: 50%;
+    background-image: url("../../assets/images/AboutMe/john-diving.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.about-me-details {
+    width: 48%;
+    text-align: justify;
+    padding: 30px;
+}
+
+.about-me-description {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    color: var(--blue-white);
+}
+
+.about-me-highlights {
+    margin: 30px 0;
+}
+
+.highlight-heading {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-weight: 1000;
+    color: var(--orange);
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.0rem;
+    letter-spacing: 0.01rem;
+    font-weight: 700;
+    color: var(--blue-white);
+}
+
+.highlight-blob {
+    height: 4px;
+    width: 4px;
+    margin: 0 10px 0 0;
+    background-color: var(--orange);
+    border-radius: 25%;
+}
+
+.about-me-options strong {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 0.85rem;
+    color: var(--blue-white);
+    font-style: italic;
+}
+
+.code-social {
+    width: 40%;
+    margin: 0 30px 0px 0px;
+}
+
+
+/*IPAD PRO RESPONSIVENESS*/
+
+@media only screen and (max-width: 1110px) {
+    .about-me-parent {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 898px) {
+    .about-me-profile {
+        display: none;
+    }
+    .about-me-details {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 466px) {
+    .code-social {
+        max-width: 6rem;
+        margin: 0 20px 0px 0px;
+    }
+}

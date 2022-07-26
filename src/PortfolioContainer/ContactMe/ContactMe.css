@@ -1,0 +1,164 @@
+.main-container {
+    min-height: 100vh;
+    /* background-image: url("../../assets/ContactMe/contact_us.jpeg"); */
+    margin: 100px 0 0 0;
+}
+
+.central-form {
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    width: 90%;
+    box-shadow: 5px 4px 20px 2px var(--gray-red);
+    border-radius: 25px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--drk-space);
+}
+
+.central-form h2 {
+    color: var(--blue-white);
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+}
+
+.back-form {
+    margin: 2rem 2.9rem;
+}
+
+.back-form .img-back {
+    width: 100%;
+    margin-bottom: 94px;
+}
+
+.img-back h4 {
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--blue-white);
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.back-form .img-back img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.central-form form {
+    width: auto;
+    display: flex;
+    color: var(--drk-space);
+    padding: 5px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -20px;
+    background-color: var(--drk-space);
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff5823;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+form label {
+    margin-bottom: 7px;
+    color: var(--blue-white);
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.07rem;
+}
+
+form input,
+textarea {
+    width: 100%;
+    border: 2px solid var(--gray-red);
+    outline: none;
+    background-color: var(--blue-white);
+    padding: 0.5rem 1.0rem;
+    font-size: 1.0rem;
+    margin-bottom: 25px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+textarea:focus {
+    border: 2px solid var(--gray-red);
+    background-color: var(--blue-white);
+}
+
+form input:focus {
+    border: 2px solid var(--orange);
+    background-color: var(--blue-white);
+}
+
+form button {
+    margin-top: 10px;
+    outline: none;
+    color: var(--blue-white);
+    border: 2px solid var(--gray-red);
+    border-radius: 25px;
+    background-color: var(--sky-blue);
+    font-size: 1.0rem;
+    width: 10rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+form button:hover {
+    background-color: var(--gray-red);
+    transition: all ease 1s;
+    border: 2px solid var(--orange);
+}
+
+button .load {
+    width: 100%;
+}
+
+button .load img {
+    width: 60px;
+    color: var(--orange);
+}
+
+.col i {
+    padding: 0px 10px;
+    color: var(--blue-white);
+    font-size: 1.72rem;
+}
+
+.col i:hover {
+    transform: scale(1.07);
+    color: var(--orange);
+}
+
+@media screen and (min-width: 940px) {
+    .back-form {
+        max-width: 920px;
+        margin: 0.5rem 2.2rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+    }
+    .img-back {
+        flex: 1;
+        align-self: center;
+        margin-right: 20px;
+    }
+    form {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .central-form h2 {
+        font-size: 16px;
+    }
+}

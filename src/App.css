@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+    /* Coolor Accents */
+    /* CSS HEX */
+    --safety-orange: #ff7900ff;
+    --orange-peel: rgb(255, 179, 57);
+    --russian-violet: #240046ff;
+    --persian-indigo: #3c096cff;
+    --magnolia: #f5edfdff;
+    --purple: rgb(73, 21, 124);
+    --french-violet: #7b2cbfff;
+    --amethyst: #9d4eddff;
+    --drk-jungle: #1E2D2F;
+    /* jcswanson.com colors */
+    --grey-grn: #777771;
+    --gray-red: #6b6b6b;
+    --drk-space: #000f3c;
+    --orange: #fcbd01;
+    --sky-blue: #3459ff;
+    --dark-bronze: rgb(41, 107, 154);
+    --blue-white: #fff5ea;
+    --gray-orange: #c3ae99;
+    --drk-blue: #355070;
+    --cotton-cloud: #d8fafe;
+    --drk-slate-blue: #0835ba;
+    --prussian-blue: #003049ff;
+    --purple: #794182;
+    --maximum-red: #d62828ff;
+    --maximum-yellow-red: #fcbf49ff;
+    --lemon-meringue: #f5f1df;
+    --error-message: #ff2525d1;
+    --toast-error: #e44f4ffa;
+    --toast-shadow: #9c9c9ce3;
+    --toast-success: #0cbfae;
+    --loader-color: #0cbfae;
 }
