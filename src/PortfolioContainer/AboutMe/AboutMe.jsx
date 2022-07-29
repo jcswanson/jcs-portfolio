@@ -65,7 +65,7 @@ export default function AboutMe(props) {
       className='about-me-container  screen-container fade-in'
       id={props.id || ''}>
       <div className='about-me-parent'>
-        <ScreenHeading title={'About Me'} subHeading={'Growing Through Change'} />
+        <ScreenHeading title={'ABOUT ME'} subHeading={'How I Got Into Software'} />
         <div className='about-me-card'>
           <div className='about-me-profile'> </div>
           <div className='about-me-details'>
@@ -80,7 +80,7 @@ export default function AboutMe(props) {
               {renderHighlight()}
             </div>
             <div className='about-me-options'>
-             <p> <strong>Problem Solving Abilities ▼</strong></p>
+             <p> <strong>DSA Problem Solving Abilities  ▼</strong></p>
              <a href='https://hackerrank.com/jcswanson' alt='HackerRank Link'> 
              <img  className='code-social' src={HackerRank} alt="HackerRank Logo" /></a>
              <a href='https://leetcode.com/jcswanson' alt='LeetCode Link'> 

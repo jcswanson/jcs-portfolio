@@ -265,7 +265,7 @@ key="programming-skills"
   return (
     <div className="resume-container screen-container fade-in" id={props.id || ""}>
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"Interactive Highlights of Resume Details"} />
+        <ScreenHeading title={"RESUME"} subHeading={"My Interactive Resume"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

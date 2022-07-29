@@ -65,7 +65,7 @@ export default function ProjectItem({
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) 
 {
-  var techstacks = techstack.map(stack => <div  className='projectItem__stack'> {stack} </div>)
+  const techstacks = techstack.map(stack => <div  className='projectItem__stack'> {stack} </div>)
   return (
     <ProjectItemStyles>
       <div className="projectItem__img">

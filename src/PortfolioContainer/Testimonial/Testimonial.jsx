@@ -43,8 +43,8 @@ export default function Testimonial(props) {
     <div className='fade-in' id={props.id || ""}>
     <section className='testimonial-section'>   
     <ScreenHeading
-        title={'Testimonials'}
-        subHeading={'Interested In What Previous Employers Think About Me?'}
+        title={'TESTIMONIALS'}
+        subHeading={'What Previous Employers Say About Me'}
       />{' '}
      
         <div className='container'>

@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
-import MoodyImg from '../images/moody-logo.png';
-import eFinanceImg from '../images/efinance-screencast.gif';
-import GreenCtgImg from '../images/greenctg.jpg';
-import PSUimg from '../images/psu-adv.png';
-import FishForecastImg from '../images/fish-repo-logo.png';
+import MoodyImg from '.cache/default-development/jcs-portfolio/src/assets/images/moody-logo.png';
+import eFinanceImg from '.cache/default-development/jcs-portfolio/src/assets/images/efinance-screencast.gif';
+import GreenCtgImg from '.cache/default-development/jcs-portfolio/src/assets/images/greenctg.jpg';
+import PSUimg from '.cache/default-development/jcs-portfolio/src/assets/images/psu-adv.png';
+import FishForecastImg from '.cache/default-development/jcs-portfolio/src/assets/images/fish-repo-logo.png';
 
 const projects = [{
         id: uuidv4(),

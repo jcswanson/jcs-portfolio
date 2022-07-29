@@ -1,5 +1,5 @@
 import React from "react";
-import "./ScreenHeading.css";
+import ".cache/default-development/jcs-portfolio/src/Utilities/ScreenHeading/ScreenHeading.css";
 
 export default function ScreenHeading(props) {
   return (

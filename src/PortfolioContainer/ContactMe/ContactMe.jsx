@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useForm } from 'react-hook-form';
 import axios from "axios";
 import { toast } from "react-toastify";
-import imgBack from "../../../src/assets/images/mailz.jpeg";
-import load1 from "../../../src/assets/images/load2.gif";
+import imgBack from "../../assets/images/mailz.jpeg";
+import load1 from "../../assets/images/load2.gif";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
@@ -87,11 +87,11 @@ export default function ContactMe(props) {
 // }
   return (
     <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"Interested in hiring me or collaborating?"} title={"Contact Me"} />
+      <ScreenHeading subHeading={"I Want to Hear From You"} title={"CONTACT ME"} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            Fill out the form below and submit for inquiries
+            Fill out the form below and submit to hire me or inquire about collaboration.
           </h2>{" "}
           <a href="https://www.facebook.com/johnchristianswanson">
             <i className="fa fa-facebook-square" />
