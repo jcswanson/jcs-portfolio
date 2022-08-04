@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { useForm } from 'react-hook-form';
 import axios from "axios";
 import { toast } from "react-toastify";
-import imgBack from "../../assets/images/mailz.jpeg";
-import load1 from "../../assets/images/load2.gif";
+import imgBack from "../../assets/images/ContactMe/mailz.jpeg";
+import load1 from "../../assets/images/ContactMe/load2.gif";
+import map from "../../assets/images/ContactMe/map-location.png"
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
 import {Footer} from "../Footer/Footer";
 import "./ContactMe.css";
+
 
 export default function ContactMe(props) {
   
@@ -67,24 +69,16 @@ export default function ContactMe(props) {
       console.log(error);
     }
   };
-//   return (
-//     <form onSubmit={handleSubmit(onSubmit)}>
-//       <input type="text" placeholder="Name" {...register("Name", {required: true, maxLength: 80})} />
-//       <input type="text" placeholder="Company" {...register("Company", { maxLength: 150})} />
-//       <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-//       <input type="tel" placeholder="Phone Number" {...register("Phone Number", { maxLength: 12})} />
-//       <select {...register("Contact Reason", { required: true })}>
-//         <option value="Job Offer">Job Offer</option>
-//         <option value="Networking">Networking</option>
-//         <option value="Project Collaboration">Project Collaboration</option>
-//         <option value="Say Hello">Say Hello</option>
-//       </select>
-//       <textarea {...register("Message", {required: true})} />
+//   const sendEmail = (e) => {
+//     e.preventDefault();
 
-//       <input type="submit" />
-//     </form>
-//   );
-// }
+//     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   };
   return (
     <div className="main-container fade-in" id={props.id || ""}>
       <ScreenHeading subHeading={"I Want to Hear From You"} title={"CONTACT ME"} />
@@ -108,10 +102,12 @@ export default function ContactMe(props) {
         </div>
         <div className="back-form">
           <div className="img-back">
-            <h4>Send Your Email Here!</h4>
-            <img src={imgBack} alt="image not found" />
+            
+            <h4>I'm located in Palm Desert, CA</h4>
+            <img src={map} alt="map not found" />
           </div>
-          <form onSubmit={submitForm}>
+          {/* {submitEmail} */}
+          <form onSubmit={submitForm}> 
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" onChange={handleName} value={name} />
@@ -141,10 +137,3 @@ export default function ContactMe(props) {
     </div>
   );
 }
-
-
-
-
-  
-  
- 

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const ProjectItemStyles = styled.div`
  margin: 30px 30px;
+ font-family: 'Roboto', sans-serif;
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -30,22 +31,30 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__desc {
     font-size: 0.9rem;
-    font-family: 'Roboto Flex', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    text-align: justify;
     letter-spacing: 0.01rem;
     line-height: 1.4rem;
     margin-top: 0.5rem;
   }
   .projectItem__stack {
-    margin-right: 0.65rem;
-    height: 1.5rem;
+    margin-right: 0.35rem;
+    height: 1.3rem;
     width: -webkit-fill-available;
+    min-width: fit-content;
     display: flex;
     background: var(--sky-blue);
+    color: var(--blue-white);
+    font-weight: 600;
+    font-size: 0.75rem;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 9px;
+  }
+  .projectItem__source {
+    font-size: 1rem;
+    
   }
   .projectItem__stackcontainer {
     display: flex;
@@ -74,6 +83,7 @@ export default function ProjectItem({
       <div className="projectItem__info">
        
           <h3 className="projectItem__title">{title}</h3>
+ 
         <div className='projectItem__stackcontainer'> {techstacks} </div>
         <p className="projectItem__desc">{desc}</p>
 

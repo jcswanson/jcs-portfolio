@@ -70,41 +70,41 @@ const Resume = (props) => {
 
   // ESTABLISH LEVEL FOR PROGAMMING LANG SKILL PERCENT
   const programmingSkillsDetails = [
-    { skill: "Java", ratingPercentage: 85 },
-    { skill: "Spring Boot", ratingPercentage: 80 },
-    { skill: "HTML/CSS", ratingPercentage: 75 },
-    { skill: "Python", ratingPercentage: 65 },
+    { skill: "Java", ratingPercentage: 80 },
+    { skill: "Spring Boot", ratingPercentage: 70 },
+    { skill: "HTML/CSS", ratingPercentage: 70 },
+    { skill: "Python", ratingPercentage: 60 },
     { skill: "JavaScript", ratingPercentage: 50 },
     { skill: "ReactJS", ratingPercentage: 40 },
     { skill: "SQL", ratingPercentage: 40 },
 
   ];
-
-  const projectsDetails = [
+  const employment = [
     {
-      title: "eFinance Loan Application",
-      duration: { fromDate: "Aug 2021", toDate: "Dec 2021" },
+      business: "UBER / LYFT",
+      duration: { fromDate: "MAR 2018", toDate: "CURRENT" },
       description:
-        "A complex secure web application in which clients apply for different loans and admins then approve or deny the clients.",
-      subHeading: "Stack: Spring Boot, Spring Security, MySQL, HTML/CSS, Bootstrap",
+        "Drive tourists through the Palm Springs area, communicating with a diverse range of customers. Deliver welcoming service during 40+ weekly rides to ensure customer satisfaction and receive five-star ratings.",
+      jobTitle: "Rideshare Driver",
     },
     {
-      title: "Fish Forecaster",
-      duration: { fromDate: "Dec 2021", toDate: "Present" },
+        business: "PACIFIC COAST HOBBIES",
+      duration: { fromDate: "JAN 2016", toDate: "JAN 2018" },
       description:
-        "A web app consuming open source REST API data to track conditions and help users find/report best locations to catch fish.",
-      subHeading:
-        "Stack: Spring Boot, MySQL, JavaScript, HTML/CSS, Google Geolocation API, StormGlass API",
+        "Earned 2 Top Monthly Sales awards by demonstrating excellent customer service when addressing customer questions and concerns, programmed customer flight controllers, and repaired drone damage resulting in 6+ five-star online ratings.",
+        jobTitle:
+        "Aircraft/Drone Sales",
     },
     {
-      title: "Jcswanson Portfolio",
-      duration: { fromDate: "Mar 2022", toDate: "Jul 2022" },
-      description:
-        "A personal single page web application to display professional details and  build a brand.",
-      subHeading:
-        "Stack: ReactJS, NodeJS, Express, HTML/CSS",
+        business: "DASCO ENGINEERING CORPORATION",
+      duration: { fromDate: "AUG 2012", toDate: "JUL 2014" },
+      description:       
+       "Completed 120+ manufacturing reports and equipped 50+ planes by inspecting landing gear assembly of Boeing 787s and logging part measurements to confirm quality. Streamlined client audit process by restructuring and maintaining the FAI report's database.",
+        jobTitle:
+        "Quality Control Technician",
     },
   ];
+ 
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
@@ -127,7 +127,7 @@ const Resume = (props) => {
         subHeading={"High School Diploma, General Studies"}
         fromDate={"SEP 2000"}
         toDate={"JUN 2004"}
-        description={"GPA: 3.33 | ACTIVITY: Varsity Baseball (2002-2004), Freshman Football (2000)."}
+        description={"GPA: 3.0 | ACTIVITY: Varsity Baseball (2002-2004), Freshman Football (2000)."}
       />
 
     </div>,
@@ -144,54 +144,54 @@ key="programming-skills"
       <div
         style={{ width: skill.ratingPercentage + "%" }}
         className="active-percentage-bar"
-      ></div>
+      ><span className="percentage-bar-text">{skill.ratingPercentage} %</span></div>
     </div>
   </div>
 ))}
 </div>,
-    /* WORK EXPERIENCE */
+    /* SOFT SKILLS */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={""}
-          subHeading={""}
-          fromDate={"2021"}
-          toDate={"Present"}
+          heading={"LEADERSHIP & TEAMWORK"}
+          subHeading={"Works well in groups and can rise to lead if there is an absence of leadership."}
+      
         />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer 
-          </span>
+        <ResumeHeading
+          heading={"PRE-DEVELOPMENT RESEARCHER"}
+          subHeading={"Can sort through information and only extract the important concepts. Able to take that research and solve the issue at hand."}
+      
+        />
+        <ResumeHeading
+          heading={"DETAIL-ORIENTED & RESULTS-DRIVEN"}
+          subHeading={"Can spot areas that need improvement quickly while not getting hung up on unimportant details when short on time."}
+      
+        />
+        <ResumeHeading
+          heading={"CRITICAL THINKING"}
+          subHeading={"Approaches problems from various angles with a well-rounded brain because of the variety of past jobs and problems solved."}
+      
+        />
+        <ResumeHeading
+          heading={"VERBAL & WRITTEN COMMUNICATION"}
+          subHeading={"Experienced in technical writing and have developed verbal skills from a decade in sales."}
+      
+        />
         </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - . .
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - .{" "}
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - .
-          </span>
-          <br />
-        </div>
-      </div>
-    </div>,
+        </div>,
 
     
 
-    /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
-      {projectsDetails.map((projectsDetails, index) => (
+    /* Employment */
+    <div className="resume-screen-container" key="employment">
+      {employment.map((employment, index) => (
         <ResumeHeading
           key={index}
-          heading={projectsDetails.title}
-          subHeading={projectsDetails.subHeading}
-          description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
+          heading={employment.business}
+          subHeading={employment.jobTitle}
+          description={employment.description}
+          fromDate={employment.duration.fromDate}
+          toDate={employment.duration.toDate}
         />
       ))}
     </div>,

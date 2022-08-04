@@ -6,7 +6,7 @@ import {
 import ScrollService from '../../../Utilities/ScrollService';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import  Logo  from '../../../assets/images/Home/sun-swan-favicon.png';
+import  Logo  from '../../../assets/images/Home/logos/bracket-yel-gry-logo.svg';
 import './Header.css';
 
 export default function Header() {

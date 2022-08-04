@@ -1,5 +1,5 @@
 {
-    "short_name": "John Swanson",
+    "short_name": "John Swanson Portfolio",
     "name": "Hi, I'm John, a Software Developer",
     "icons": [
         { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
@@ -7,6 +7,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#4AD1AA",
+    "theme_color": "#fcbd01",
     "background_color": "#221826"
 }

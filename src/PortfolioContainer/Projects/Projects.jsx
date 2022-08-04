@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from '../../Utilities/Animations';
@@ -10,35 +10,37 @@ import ProjectItem from "./ProjectItem";
 import 'swiper/css/bundle';
 
 const ProjectStyle = styled.div`
-  
-  .projects__allItems {
+font-family: 'Roboto', sans-serif;
+margin:20px 20px;
+.projects__allItems {
     gap: 0rem;
-    margin-bottom: 3rem;
+    
   }
   .container {
       background-color: var(--drk-space);
       border-radius: 25px;
-      box-shadow: 5px 5px 20px 4px var(--gray-red);
+      box-shadow: 5px 5px 20px 4px var(--gray);
   }
   .swiper-container {
     padding-top: 0rem;
     max-width: 100%;
     background-color: var(--drk-space);
   }
+
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
     height: 45px;
     width: 45px;
-    background: var(--gray-orange);
+    background-color: var(--gray);
+    color: var(--orange);
     z-index: 10;
     right: 60px;
     left: auto;
     top: 8px;
     bottom: 0px;
     transform: translateY(50%);
-    color: var(--drk-space);
-    border-radius: 15px;
+    border-radius: 25px;
   }
   .swiper-button-next {
     right: 0;
@@ -82,13 +84,18 @@ export default function Projects(props){
 
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-    
+    useEffect(() => {
+      return () => {
+        /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+        fadeInSubscription.unsubscribe();
+      };
+    }, [fadeInSubscription]);   
     return ( 
     <div className="project-component fade-in"  id={props.id || ""}> 
          <ProjectStyle>
            <ScreenHeading
              title={'PROJECTS'}
-             subHeading={'Applications I have Developed'}
+             subHeading={'Applications from my GitHub Profile'}
             /> 
         
       <div className="container">
@@ -117,7 +124,7 @@ export default function Projects(props){
             }}
           >
             {projects.map((project, index) => {
-              if (index >= 5) return;
+              if (index >= projects.length - 1) return;
               return (
                 <SwiperSlide key={project.id}>
                   <ProjectItem
@@ -129,10 +136,12 @@ export default function Projects(props){
                   />
                 </SwiperSlide>
               );
-            })}
+            })};
           </Swiper>
         </div>
-      </div> </ProjectStyle> </div>
+      </div> 
+    </ProjectStyle> 
+  </div>
    
        
     );

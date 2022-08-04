@@ -35,7 +35,7 @@ export default function Profile() {
           </div>
           <div className="profile-details-role">
               <span className="profile-role-text">
-                I am proficient building applications with several programming languages and frameworks.          
+                I build full stack applications using popular programming languages and frameworks. Learn about my capabilities below.         
             </span>
           </div>
           <div className="profile-options">

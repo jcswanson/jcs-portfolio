@@ -51,16 +51,12 @@
             }
             
             .profile-role-text {
-                font-family: 'Roboto Flex', sans-serif;
-                font-size: 1rem;
-                color: silver;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.97rem;
+                padding: 0 0.9rem;
+                color: var(--blue-white);
                 font-weight: 500;
             }
-            /**
- * ----------------------------------------
- * animation text-shadow-pop-right
- * ----------------------------------------
- */
             
             .highlighted-text {
                 color: var(--orange);
@@ -169,7 +165,7 @@
                 }
                 .profile-details-role h1 {
                     font-size: 2rem;
-                    font-family: 'RobotoMono-SemiBold', sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-weight: bold;
                 }
                 .profile-options .highlighted-btn {

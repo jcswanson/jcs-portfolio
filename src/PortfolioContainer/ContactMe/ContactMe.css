@@ -30,21 +30,23 @@
 
 .back-form .img-back {
     width: 100%;
-    margin-bottom: 94px;
+    margin-bottom: 74px;
+    margin-top: 2rem;
+    ;
 }
 
 .img-back h4 {
     letter-spacing: 0.05rem;
-    font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
     color: var(--blue-white);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     opacity: 0.8;
 }
 
 .back-form .img-back img {
     width: 100%;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .central-form form {
@@ -62,16 +64,17 @@ form p {
     text-align: center;
     margin-bottom: 10px;
     color: #ff5823;
-    letter-spacing: 0.05rem;
-    font-family: 'Roboto Mono', sans-serif;
+    letter-spacing: 0.02rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 form label {
     margin-bottom: 7px;
     color: var(--blue-white);
-    font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 0.07rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02rem;
 }
 
 form input,
@@ -99,24 +102,21 @@ form input:focus {
 
 form button {
     margin-top: 10px;
-    outline: none;
     color: var(--blue-white);
-    border: 2px solid var(--gray-red);
     border-radius: 25px;
     background-color: var(--sky-blue);
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     width: 10rem;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
+    font-family: 'Montserrat-Black', sans-serif;
     height: 50px;
     align-items: center;
     justify-content: center;
 }
 
 form button:hover {
-    background-color: var(--gray-red);
+    background-color: var(--orange);
     transition: all ease 1s;
-    border: 2px solid var(--orange);
+    color: var(--drk-space);
 }
 
 button .load {
@@ -136,7 +136,7 @@ button .load img {
 
 .col i:hover {
     transform: scale(1.07);
-    color: var(--orange);
+    color: var(--gray-orange);
 }
 
 @media screen and (min-width: 940px) {

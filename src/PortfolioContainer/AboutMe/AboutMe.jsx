@@ -17,37 +17,46 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTANTS = {
     description:
-    <div>  <p><strong>"Change is inevitable. Growth is optional." - John C. Maxwell</strong></p>
-    <p>After going from quality control, to sales, and retail jobs, I knew that 
-      in order to grow with the changing job market, I had to go back to finish 
-      college.</p>
-      <p>As horrible as COVID's impact was on the world, it also
-         awakened many to making changes that improved their quality of life.</p>
+    <div> 
+       {/* <p><strong>"Change is inevitable. Growth is optional." - John C. Maxwell</strong></p> */}
+
+    <p>Growing up I was a science nerd. If it included astronomy or spaceflight I was watching or 
+      reading it. My dream was to be an astronaut but after high school, my eyesight was horrible and in 2004 all astronauts had to be pilots. </p>
+
+      <p>Instead, I had jobs ranging from flooring salesman to aerospace quality control, to retail sales, 
+        and rideshare driver. I was unhappy and looking for change. </p>
      
-      <p>I made a decision to back to school to build career growth instead of 
-         trying to apply to tech positions without experience. Industries like 3D printing, 
-        the IoT, green industry, and reusable rockets will provide an exciting future.</p>
-        <p>So, I started programming in Java at Penn State and self-learning Python.</p>
-      <p>I was hooked on development after doing my first debugging. 
-        I used my detail-oriented skills to sift thru code and then I get 
-        to turn around to use creativity to design a solution to the problem.</p> 
-   <p>Prior experience with aerospace quality control has given skills me to find 
-         fine details, document any abnormalities, and communicate well within my organization.</p>
+      <p>My programming journey started by watching SpaceX land their reusable Falcon 9 rockets on barges 
+        in the ocean. Since rockets involve spaceflight, I needed to know more about 
+        how these landings were even possible. </p>
+
+        <p>I researched it and read about the rocket flight control software. It allowed them to be steered by grid fins
+           and thus able to land. </p>
+
+      <p>Intrigued, I bought an Arduino flight controller and wrote some basic code to command a drone to
+         fly between two waypoints and land. That drone did exactly what I told it to and I was amazed. </p> 
+
+   <p>I could see now that programming had unlimited potential. However, I knew how challenging the job market is in the tech industry, 
+    so I began attending at Penn State University. </p>
+    
+    <p>In the years since enrollment, I have learnt several new languages and built a portfolio of projects, 
+      much of which is in the projects section.</p>
+
+   <p>In the future, I will be contributing to open-source projects, collaborating with others, and expanding my portfolio. </p>
+
       <p>Outside of coding I enjoy fishing, diving, and protesting for the health of our coastal kelp beds 
         around Southern California.  
       </p>
     </div>,
     highlights: {
       bullets: [
-        'IntellijIDEA Ultimate, Eclipse, Netbeans',
-        'Microsoft Office, Microsoft Teams, Discord, Slack',
-        'JIRA, Trello, GitHub, Lucidchart, Microsoft Visio',
-        'Raspbian OS, Raspberry Pi Model 4',
-        'WordPress and Drupal',
-        'Postman and cURL',
+        'IntellijIDEA Ultimate, VSCode, Eclipse, Netbeans',
+        'Microsoft Office, Teams, Discord, Slack',
+        'JIRA, Trello, GitHub, Lucidchart, Visio',
+        'Google Apps, WordPress, Postman',
         'MySQL, PostgreSQL',
-        'Amazon Web Services IAM, Lambda, S3',
-        'Windows 10, Linux, MacOSx',
+        'Amazon Web Services Lambda, IAM, and S3',
+        'Windows 10, MacOSx',
       ],
       heading: 'Software Skills',
     },
