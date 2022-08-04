@@ -1,10 +1,6 @@
 {
     "name": "jcs-portfolio",
-<<<<<<< HEAD
     "version": "0.1.0",
-=======
-    "version": "1.0",
->>>>>>> e8f50140fdb364a2ad880181ab721e040906b8b2
     "private": true,
     "description": "",
     "main": "index.js",
