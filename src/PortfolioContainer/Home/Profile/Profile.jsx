@@ -1,24 +1,34 @@
 import React from "react";
-import resume from '../../../assets/data/swanson-resume.pdf';
+import { TOTAL_SCREENS } from "../../../Utilities/commonUtils";
+import resume from "../../../assets/data/john-swanson-resume.pdf";
 import "./Profile.css";
 
 export default function Profile() {
+  const scrollToContactMe = () => {
+    let screenComponent = document.getElementById(TOTAL_SCREENS[5].screen_name);
+    if (!screenComponent) return;
+    screenComponent.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
             <div className="cols-icon">
-              <a href="https://www.facebook.com/john.swanson2">
+              <a href="https://www.facebook.com/john.swanson2" alt="facebook link" target="_blank"rel="noopener" >
                 <i className="fa fa-facebook-square"></i>
               </a>
-              <a href="https://www.linkedin.com/in/johncswanson/">
-                <i className="fa fa-linkedin-square"></i> 
+              <a href="https://www.linkedin.com/in/johncswanson/"alt="linkedin link" target="_blank"rel="noopener">
+                <i className="fa fa-linkedin-square"></i>
               </a>
-              <a href="https://www.instagram.com/johncswanson/">
+              <a href="https://www.instagram.com/johncswanson/"alt="instagram link" target="_blank"rel="noopener">
                 <i className="fa fa-instagram"></i>
               </a>
-              <a href="https://github.com/jcswanson">
+              <a href="https://twitter.com.com/the_jcswanson/"alt="twitter link" target="_blank" rel="noopener">
+                <i className="fa fa-twitter-square"></i>
+              </a>
+              <a href="https://github.com/jcswanson"alt="github link" target="_blank" rel="noopener">
                 <i className="fa fa-github-square"></i>
               </a>
             </div>
@@ -26,22 +36,24 @@ export default function Profile() {
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hi I'm <span className="highlighted-text text-shadow-pop-tr">John
-              </span>
-             
-               <h4 className="profile-job-title">a Software Developer</h4>
-              
-            </span> 
+              Hi I'm{" "}
+              <span className="highlighted-text text-shadow-pop-tr">John</span>
+              <h4 className="profile-job-title">Software Developer</h4>
+            </span>
           </div>
           <div className="profile-details-role">
-              <span className="profile-role-text">
-                I build full stack applications using popular programming languages and frameworks. Learn about my capabilities below.         
+            <span className="profile-role-text">
+              I build applications that address use cases important to primary stakeholders. I can code in Java, Spring Boot, and Python.
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn">Contact Me</button>
-            <a href={resume} download="swanson-resume.pdf">
-              <button className="btn highlighted-btn">Resume</button>
+            <button
+              onClick={() => scrollToContactMe()}
+              className="btn primary-btn">
+              Hire Me
+            </button>
+            <a href="https://drive.google.com/file/d/1SSeVXdLuiVrwTG6KyVRWCsEzObrqmcZB/view?usp=sharing" download="swanson-resume.pdf" target="_blank" rel="noreferrer" alt="jcswanson resume link">
+              <button className="btn highlighted-btn">My Resume</button>
             </a>
           </div>
         </div>
@@ -49,7 +61,6 @@ export default function Profile() {
           <div className="profile-picture-background"></div>
         </div>
       </div>
-      
     </div>
   );
 }

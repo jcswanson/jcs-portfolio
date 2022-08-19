@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
-import * as FaIcons from 'react-icons/fa'
-import { IconContext } from 'react-icons';
+import * as FaIcons from "react-icons/fa";
+import { IconContext } from "react-icons";
 import "./Resume.css";
 
 const Resume = (props) => {
@@ -24,11 +24,11 @@ const Resume = (props) => {
     return (
       <div className="resume-heading">
         <div className="resume-main-heading">
-          <div className="heading-bullet"></div>
+          {/* <div className="heading-bullet"></div> */}
           <span>{props.heading ? props.heading : ""}</span>
           {props.fromDate && props.toDate ? (
             <div className="heading-date">
-              {props.fromDate + " - " + props.toDate}
+              {props.fromDate + "-" + props.toDate}
             </div>
           ) : (
             <div></div>
@@ -47,23 +47,23 @@ const Resume = (props) => {
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
     {
-      title: 'Education',
+      title: "Education",
       icon: <FaIcons.FaUserGraduate />,
     },
     {
-      title: 'Programming Skills',
-      icon: <FaIcons.FaLaptopCode   />,
+      title: "Programming Skills",
+      icon: <FaIcons.FaLaptopCode />,
     },
     {
-      title: 'Soft Skills',
-      icon: < FaIcons.FaRegChartBar/>,
+      title: "Soft Skills",
+      icon: <FaIcons.FaRegChartBar />,
     },
     {
-      title: 'Work History',
-      icon: <FaIcons.FaSitemap/> ,
+      title: "Work History",
+      icon: <FaIcons.FaSitemap />,
     },
     {
-      title: 'Interests',
+      title: "Interests",
       icon: <FaIcons.FaUserAstronaut />,
     },
   ];
@@ -77,110 +77,119 @@ const Resume = (props) => {
     { skill: "JavaScript", ratingPercentage: 50 },
     { skill: "ReactJS", ratingPercentage: 40 },
     { skill: "SQL", ratingPercentage: 40 },
-
   ];
   const employment = [
     {
       business: "UBER / LYFT",
-      duration: { fromDate: "MAR 2018", toDate: "CURRENT" },
+      duration: { fromDate: "2018", toDate: "Current" },
       description:
-        "Drive tourists through the Palm Springs area, communicating with a diverse range of customers. Deliver welcoming service during 40+ weekly rides to ensure customer satisfaction and receive five-star ratings.",
+        "Communicating with a diverse range of customers to deliver welcoming service during 40+ weekly rides to ensure customer comfortability.",
       jobTitle: "Rideshare Driver",
     },
     {
-        business: "PACIFIC COAST HOBBIES",
-      duration: { fromDate: "JAN 2016", toDate: "JAN 2018" },
+      business: "PACIFIC COAST HOBBIES",
+      duration: { fromDate: "2016", toDate: "2018" },
       description:
-        "Earned 2 Top Monthly Sales awards by demonstrating excellent customer service when addressing customer questions and concerns, programmed customer flight controllers, and repaired drone damage resulting in 6+ five-star online ratings.",
-        jobTitle:
-        "Aircraft/Drone Sales",
+        "Earned 2 Top Monthly Sales awards by demonstrating excellent customer service. Programmed customers' drone flight controllers.",
+      jobTitle: "Aircraft/Drone Sales",
     },
     {
-        business: "DASCO ENGINEERING CORPORATION",
-      duration: { fromDate: "AUG 2012", toDate: "JUL 2014" },
-      description:       
-       "Completed 120+ manufacturing reports and equipped 50+ planes by inspecting landing gear assembly of Boeing 787s and logging part measurements to confirm quality. Streamlined client audit process by restructuring and maintaining the FAI report's database.",
-        jobTitle:
-        "Quality Control Technician",
+      business: "DASCO ENGINEERING",
+      duration: { fromDate: "2012", toDate: "2014" },
+      description:
+        "Completed 120+ manufacturing reports and equipped 50+ planes by inspecting landing gear assembly of Boeing 787s and logging part measurements to confirm quality. Streamlined client audit process by restructuring and maintaining the FAI report's database.",
+      jobTitle: "Quality Control Technician",
     },
   ];
- 
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"PENNSYLVANIA STATE UNIVERSITY"}
-        subHeading={"B.S. Information Science & Technology: Information Systems Development"}
-        fromDate={"AUG 2018"}
-        toDate={"DEC 2022"}
-        description={"GPA: 3.56 | HONORS: Dean’s List and Academic Grant Recipient (2020-Present). For a detailed look at my coursework visit my LinkedIn profile's Education section."}
+        heading={"PENN STATE UNIVERSITY"}
+        subHeading={
+          "B.S. Information Sciences & Technology: Information Systems Development"
+        }
+        fromDate={"2018"}
+        toDate={"2023"}
+        description={
+          "GPA: 3.56 | HONORS: Dean’s List and Academic Grant Recipient (2020-Present). For a detailed look at my coursework visit my LinkedIn profile's Education section."
+        }
       />
       <ResumeHeading
         heading={"EL CAMINO COLLEGE"}
-        subHeading={"65 Credits in Mechanical Engineering"}
-        fromDate={"SEP 2004"}
-        toDate={"JUN 2008"}
-        description={"GPA: 3.33 | ACTIVITY: Baseball (Summer 2005), Attended on and off, in between jobs and caretaking of my grandmother."}
+        subHeading={"Quality Control Engineering/Astronomy"}
+        fromDate={"2004"}
+        toDate={"2008"}
+        description={
+          "GPA: 3.33 | ACTIVITIES: Baseball (2005), 1 year of Astronomy & 2 years of Quality Engineering."
+        }
       />
       <ResumeHeading
-        heading={"WEST TORRANCE HIGH SCHOOL"}
-        subHeading={"High School Diploma, General Studies"}
-        fromDate={"SEP 2000"}
-        toDate={"JUN 2004"}
-        description={"GPA: 3.0 | ACTIVITY: Varsity Baseball (2002-2004), Freshman Football (2000)."}
+        heading={"WEST TORRANCE HS"}
+        subHeading={"High School Diploma"}
+        fromDate={"2000"}
+        toDate={"2004"}
+        description={
+          "GPA: 3.0 | ACTIVITIES: Varsity Baseball (2002-2004), Freshman Football (2000)."
+        }
       />
-
     </div>,
-/* PROGRAMMING SKILLS */
-<div
-className="resume-screen-container programming-skills-container"
-key="programming-skills"
->
-{programmingSkillsDetails.map((skill, index) => (
-  <div className="skill-parent" key={index}>
-    <div className="heading-bullet"></div>
-    <span>{skill.skill}</span>
-    <div className="skill-percentage">
-      <div
-        style={{ width: skill.ratingPercentage + "%" }}
-        className="active-percentage-bar"
-      ><span className="percentage-bar-text">{skill.ratingPercentage} %</span></div>
-    </div>
-  </div>
-))}
-</div>,
+    /* PROGRAMMING SKILLS */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="programming-skills"
+    >
+      {programmingSkillsDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            >
+              <span className="percentage-bar-text">
+                {skill.ratingPercentage}%
+              </span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>,
     /* SOFT SKILLS */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"LEADERSHIP & TEAMWORK"}
-          subHeading={"Works well in groups and can rise to lead if there is an absence of leadership."}
-      
+          subHeading={"LEADERSHIP & TEAMWORK"}
+          description={
+            "Works well in groups and can rise to lead if there is an absence of leadership."
+          }
         />
         <ResumeHeading
-          heading={"PRE-DEVELOPMENT RESEARCHER"}
-          subHeading={"Can sort through information and only extract the important concepts. Able to take that research and solve the issue at hand."}
-      
+          subHeading={"RESEARCH & DEVELOPMENT"}
+          description={
+            "Can sort through information and only extract the important concepts. Able to take that research and solve the issue at hand."
+          }
         />
         <ResumeHeading
-          heading={"DETAIL-ORIENTED & RESULTS-DRIVEN"}
-          subHeading={"Can spot areas that need improvement quickly while not getting hung up on unimportant details when short on time."}
-      
+          subHeading={"DETAIL-ORIENTED & RESULTS-DRIVEN"}
+          description={
+            "Can spot areas that need improvement quickly while not getting hung up on unimportant details when short on time."
+          }
         />
         <ResumeHeading
-          heading={"CRITICAL THINKING"}
-          subHeading={"Approaches problems from various angles with a well-rounded brain because of the variety of past jobs and problems solved."}
-      
+          subHeading={"CRITICAL THINKING"}
+          description={
+            "Approaches problems from various angles with a well-rounded brain because of the variety of past jobs and problems solved."
+          }
         />
         <ResumeHeading
-          heading={"VERBAL & WRITTEN COMMUNICATION"}
-          subHeading={"Experienced in technical writing and have developed verbal skills from a decade in sales."}
-      
+          subHeading={"VERBAL & WRITTEN COMMUNICATION"}
+          description={
+            "3 years of technical writing at DASCO Engineering. Developed verbal communiction skills from 10+ years in sales and rideshare."
+          }
         />
-        </div>
-        </div>,
-
-    
+      </div>
+    </div>,
 
     /* Employment */
     <div className="resume-screen-container" key="employment">
@@ -199,15 +208,15 @@ key="programming-skills"
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="ASTRONOMY"
+        subHeading="ASTRONOMY"
         description="As a kid growing up I dreamed of being an astronaut and had my own telescope, which I used to draw maps of the moon's craters. Nowadays, I have my own professional CMOS astronomical imaging camera that I use to image galaxies and nebulae."
       />
       <ResumeHeading
-        heading="FREE DIVING"
+        subHeading="FREE DIVING"
         description="Holding my breath while diving to 80 feet in a magical kelp forest is exhilirating and the closest you can get to being on another planet. It is so quiet and serene without scuba tanks. I also clean trash floating in the kelp and occasionally spearfish when giant white sea bass are around."
       />
       <ResumeHeading
-        heading="HOCKEY & BASEBALL"
+        subHeading="HOCKEY & BASEBALL"
         description="I have played organized team sports all my life. Hockey and Baseball are my favorite sports because of the team work involved. I love how a mediocre team can beat a talented team as long as they are a cohesive team working together. My favorite teams are the Los Angeles Kings and Dodgers."
       />
     </div>,
@@ -233,14 +242,27 @@ key="programming-skills"
         }
         key={index}
       >
-         {/* change icon color when bullet is selected */}
-        <IconContext.Provider value={index === selectedBulletIndex ? 
-          {color: 'var(--orange)'} : {color: 'var(--blue-white)'}}>
-        <div className='bullet-logo'>{bullet.icon}</div>
+        {/* change icon color when bullet is selected */}
+        <IconContext.Provider
+          value={
+            index === selectedBulletIndex
+              ? { color: "var(--light-tan)" }
+              : { color: "var(--charcoal)" }
+          }
+        >
+          <div className="bullet-logo">{bullet.icon}</div>
         </IconContext.Provider>
-        <span className="bullet-label">{bullet.title}</span>
+        <span
+          style={
+            index === selectedBulletIndex
+              ? { color: "var(--light-tan)" }
+              : { color: "var(--charcoal)" }
+          }
+          className="bullet-label"
+        >
+          {bullet.title}
+        </span>
       </div>
-      
     ));
   };
 
@@ -263,9 +285,15 @@ key="programming-skills"
   }, [fadeInSubscription]);
 
   return (
-    <div className="resume-container screen-container fade-in" id={props.id || ""}>
+    <div
+      className="resume-container screen-container fade-in"
+      id={props.id || ""}
+    >
       <div className="resume-content">
-        <ScreenHeading title={"RESUME"} subHeading={"My Interactive Resume"} />
+        <ScreenHeading
+          title={"Resume"}
+          subHeading={"Important highlights of my skills/experience"}
+        />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

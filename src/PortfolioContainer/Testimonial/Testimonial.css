@@ -1,9 +1,9 @@
 .testimonial-section {
-    padding: 80px 0 80px;
+    padding: 90px 0 60px;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    background-color: var(--blue-white);
+    background-color: var(--charcoal);
     z-index: -1;
 }
 
@@ -16,36 +16,35 @@
     height: 100%;
     z-index: -1;
     opacity: 1;
-    background-color: var(--blue-white);
+    background-color: var(--charcoal);
 }
 
 .testimonial-section .testi-item {
-    background-color: var(--drk-space);
-    padding: 30px;
-    margin: 22px 15px 22px 15px;
+    background-color: var(--light-tan);
+    padding: 20px;
+    border: 3px solid var(--brown);
+    margin: 50px 15px 50px 15px;
     border-radius: 25px;
-    box-shadow: 5px 5px 20px 4px var(--gray);
 }
 
 .testimonial-section .testi-item p {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    font-weight: 700;
-    /* font-style: italic; */
-    color: var(--blue-white);
-    font-family: 'Roboto', sans-serif;
+    font-size: 0.97rem;
+    line-height: 1.35rem;
+    text-align: left;
+    color: var(--charcoal);
+    font-family: 'Roboto-Regular', sans-serif;
 }
 
 .testimonial-section .testi-item p .fa-quote-left {
     margin-right: 15px;
-    font-size: 1.15rem;
-    color: var(--orange);
+    font-size: 2.5rem;
+    color: var(--brown);
 }
 
 .testimonial-section .testi-item p .fa-quote-right {
     margin-left: 15px;
-    font-size: 1.15rem;
-    color: var(--orange);
+    font-size: 1.5rem;
+    color: var(--brown);
 }
 
 .testimonial-section .client-info {
@@ -58,17 +57,16 @@
 .testimonial-section .client-info h5 {
     font-size: 1.1rem;
     line-height: 1rem;
-    font-weight: 900;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 0 5px -10px;
-    color: var(--orange);
+    font-family: 'Montserrat-Bold', sans-serif;
+    margin: 0 0 10px -10px;
+    color: var(--dark-bronze);
 }
 
 .testimonial-section .client-info p {
-    font-size: 0.9rem;
-    line-height: 22px;
+    font-size: 0.85rem;
+    line-height: 1rem;
+    text-align: left;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: var(--sky-blue);
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    color: var(--brown);
 }

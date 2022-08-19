@@ -1,35 +1,19 @@
 :root {
-    /* Coolor Accents */
-    /* CSS HEX */
-    --safety-orange: #ff7900ff;
-    --orange-peel: rgb(255, 179, 57);
-    --russian-violet: #240046ff;
-    --persian-indigo: #3c096cff;
-    --magnolia: #f5edfdff;
-    --purple: rgb(73, 21, 124);
-    --french-violet: #7b2cbfff;
-    --amethyst: #9d4eddff;
-    --drk-jungle: #1E2D2F;
     /* jcswanson.com colors */
-    --grey-grn: #777771;
-    --gray-red: #6b6b6b;
-    --drk-space: #000f3c;
-    --orange: #fcbd01;
-    --sky-blue: #3459ff;
-    --dark-bronze: #296b9a;
-    --blue-white: #fff5ea;
-    --gray-orange: #c3ae99;
-    --drk-blue: #355070;
-    --cotton-cloud: #d8fafe;
-    --drk-slate-blue: #0835ba;
-    --prussian-blue: #003049ff;
-    --purple: #794182;
-    --maximum-red: #d62828ff;
-    --maximum-yellow-red: #fcbf49ff;
-    --lemon-meringue: #f5f1df;
+    --brown: #705213;
+    --light-tan: #ffecc7;
+    --peach: #f8954a;
+    --light-brown: #c98448;
+    --dark-bronze: #524f48;
+    --skill-color: #41ff83;
+    --skill-bg: #f41a1a;
+    --charcoal: #2e2d2a;
+    --khaki-tan: #cab27e;
+    --nav-dark: #6c6c6c;
+    --nav-light: #fff599;
     --error-message: #ff2525d1;
     --toast-error: #e44f4ffa;
-    --toast-shadow: #9c9c9ce3;
-    --toast-success: #0cbfae;
-    --loader-color: #0cbfae;
+    --toast-shadow: #9c9c9cdb;
+    --toast-success: #540cbf;
+    --loader-color: #7b00fe;
 }

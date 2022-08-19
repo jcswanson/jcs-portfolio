@@ -1,48 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* font-family: 'Roboto Flex', sans-serif; */
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
 
 @font-face {
-    font-family: "Montserrat Reg";
+    font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: 300;
     src: url('./assets/Fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat-Black";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
     src: url('./assets/Fonts/Montserrat-Black.ttf');
 }
 
 @font-face {
-    font-family: "Roboto Mono";
+    font-family: "Montserrat-Bold";
     font-style: normal;
-    font-weight: normal;
-    src: url('./assets/Fonts/RobotoMono-Regular.ttf');
+    font-weight: 800;
+    src: url('./assets/Fonts/Montserrat-Bold.ttf');
 }
 
 @font-face {
-    font-family: "Roboto Mono Bold";
+    font-family: "Montserrat-SemiBold";
     font-style: normal;
-    font-weight: bold;
-    src: url('./assets/Fonts/RobotoMono-SemiBold.ttf');
+    font-weight: 700;
+    src: url('./assets/Fonts/Montserrat-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: "Roboto Mono Thin";
+    font-family: "Roboto-Regular";
     font-style: normal;
-    font-weight: lighter;
-    src: url('./assets/Fonts/RobotoMono-Thin.ttf');
+    font-weight: 400;
+    src: url('./assets/Fonts/Roboto-Regular.ttf');
 }
 
+@font-face {
+    font-family: "Roboto-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/Fonts/Roboto-Medium.ttf');
+}
 
-/* 
-font-family: 'Montserrat-size', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'RobotoMono', monospace;
-*/
+@font-face {
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/Fonts/Roboto-Bold.ttf');
+}
 
 .container {
     max-width: 1200px;
@@ -60,10 +71,10 @@ font-family: 'RobotoMono', monospace;
 body {
     margin: 0;
     overflow-y: overlay;
-    font-family: 'Roboto Flex', monospace;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 0.82rem;
-    background-color: var(--blue-white);
+    background-color: var(--charcoal);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -102,30 +113,30 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .primary-btn {
-    color: var(--blue-white);
+    color: var(--charcoal);
     border-radius: 25px;
     padding: 15px 0;
-    background-color: var(--drk-space);
-    border: 2px solid var(--sky-blue);
-    font-weight: 1000;
+    background-color: var(--light-tan);
+    border: 3px solid var(--charcoal);
+    font-weight: 900;
     font-size: 0.9rem;
-    font-style: 'Roboto Flex', sans-serif;
+    font-family: 'Montserrat-Black', sans-serif;
 }
 
 .primary-btn:hover {
-    color: var(--drk-space);
-    background-color: var(--sky-blue);
-    border: 2px solid var(--sky-blue);
+    color: var(--charcoal);
+    background-color: var(--khaki-tan);
+    border: 3px solid var(--khaki-tan);
 }
 
 .highlighted-btn {
-    color: var(--drk-space);
-    font-family: 'Roboto Flex', monospace;
-    font-weight: 1000;
+    color: var(--light-tan);
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 900;
     font-size: 0.9rem;
-    border: 2px solid var(--blue-white);
+    border: 3px solid var(--charcoal);
     border-radius: 25px;
-    background-color: var(--blue-white);
+    background-color: var(--charcoal);
 }
 
 @media only screen and (max-width: 568px) {
@@ -139,7 +150,6 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .fade-in {
-    opacity: 0;
     transform: translateY(80px);
     transition: all 0.8s ease;
 }

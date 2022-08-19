@@ -7,27 +7,27 @@ import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
 
 export const TOTAL_SCREENS = [
   {
-    screen_name: "home",
+    screen_name: "Home",
     component: Home,
   },
   {
-    screen_name: "about",
+    screen_name: "About",
     component: AboutMe,
   },
   {
-    screen_name: "resume",
+    screen_name: "Resume",
     component: Resume,
   },
   {
-    screen_name: "projects",
+    screen_name: "Projects",
     component: Projects,
   },
   {
-    screen_name: "testimonials",
+    screen_name: "Testimonials",
     component: Testimonial,
   },
   {
-    screen_name: "contact",
+    screen_name: "Contact",
     component: ContactMe,
   },
 ];

@@ -1,7 +1,22 @@
+.send-button-and-message {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.message {
+    color: var(--toast-success);
+    font-size: 0.95rem;
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+}
+
 .main-container {
     min-height: 100vh;
-    /* background-image: url("../../assets/ContactMe/contact_us.jpeg"); */
-    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .central-form {
@@ -9,68 +24,63 @@
     padding: 10px;
     display: flex;
     width: 90%;
-    box-shadow: 5px 4px 20px 2px var(--gray-red);
     border-radius: 25px;
-    margin: auto;
+    margin: 50px 0;
     flex-direction: column;
+    border: 3px solid var(--brown);
     justify-content: center;
-    background-color: var(--drk-space);
+    background-color: var(--light-tan);
 }
 
 .central-form h2 {
-    color: var(--blue-white);
+    color: var(--charcoal);
     font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
     margin: 10px;
 }
 
 .back-form {
-    margin: 2rem 2.9rem;
+    max-width: 1050px;
+    margin: 0.5rem 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    align-items: stretch;
 }
 
 .back-form .img-back {
     width: 100%;
-    margin-bottom: 74px;
-    margin-top: 2rem;
-    ;
-}
-
-.img-back h4 {
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    color: var(--blue-white);
-    font-size: 1.3rem;
-    opacity: 0.8;
+    margin-right: 20px;
 }
 
 .back-form .img-back img {
     width: 100%;
-    opacity: 1;
+    border-radius: 25px;
+    margin-top: 30px;
+    opacity: 0.9;
 }
 
 .central-form form {
-    width: auto;
+    width: 95%;
     display: flex;
-    color: var(--drk-space);
-    padding: 5px;
+    color: var(--light-tan);
+    padding: 5px 5px 5px 5px;
     justify-content: center;
     flex-direction: column;
-    margin-top: -20px;
-    background-color: var(--drk-space);
+    background-color: var(--light-tan);
 }
 
 form p {
     text-align: center;
     margin-bottom: 10px;
-    color: #ff5823;
     letter-spacing: 0.02rem;
+    background-color: var(--light-tan);
     font-family: 'Roboto', sans-serif;
 }
 
 form label {
     margin-bottom: 7px;
-    color: var(--blue-white);
+    color: var(--charcoal);
     font-weight: 600;
     font-size: 0.95rem;
     font-family: 'Roboto', sans-serif;
@@ -80,31 +90,31 @@ form label {
 form input,
 textarea {
     width: 100%;
-    border: 2px solid var(--gray-red);
+    border: 2px solid var(--charcoal);
     outline: none;
-    background-color: var(--blue-white);
+    background-color: var(--light-tan);
     padding: 0.5rem 1.0rem;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     margin-bottom: 25px;
     transition: 0.3s;
     border-radius: 10px;
 }
 
 textarea:focus {
-    border: 2px solid var(--gray-red);
-    background-color: var(--blue-white);
+    border: 2px solid var(--peach);
+    background-color: var(--light-tan);
 }
 
 form input:focus {
-    border: 2px solid var(--orange);
-    background-color: var(--blue-white);
+    border: 2px solid var(--peach);
+    background-color: var(--light-tan);
 }
 
 form button {
     margin-top: 10px;
-    color: var(--blue-white);
+    color: var(--light-tan);
     border-radius: 25px;
-    background-color: var(--sky-blue);
+    background-color: var(--charcoal);
     font-size: 0.9rem;
     width: 10rem;
     font-family: 'Montserrat-Black', sans-serif;
@@ -114,51 +124,61 @@ form button {
 }
 
 form button:hover {
-    background-color: var(--orange);
-    transition: all ease 1s;
-    color: var(--drk-space);
-}
-
-button .load {
-    width: 100%;
-}
-
-button .load img {
-    width: 60px;
-    color: var(--orange);
+    background-color: var(--peach);
+    transition: all ease 0.7s;
+    color: var(--charcoal);
 }
 
 .col i {
-    padding: 0px 10px;
-    color: var(--blue-white);
-    font-size: 1.72rem;
+    padding: 10px 10px;
+    color: var(--charcoal);
+    font-size: 2rem;
+    margin-right: 10px;
 }
 
 .col i:hover {
     transform: scale(1.07);
-    color: var(--gray-orange);
+    color: var(--dark-bronze);
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (max-width: 940px) {
     .back-form {
-        max-width: 920px;
-        margin: 0.5rem 2.2rem;
+        max-width: 900px;
+        margin: 0.5rem 0.2rem;
         display: flex;
-        justify-content: space-evenly;
         margin-top: 0px;
+        align-items: stretch;
+        flex-direction: column;
     }
     .img-back {
         flex: 1;
         align-self: center;
-        margin-right: 20px;
+        margin-right: 10px;
     }
-    form {
+    .back-form .img-back img {
+        width: 90%;
+        display: none;
+    }
+    .central-form form {
+        padding: 5px 14px 5px 14px;
         flex: 1;
     }
 }
 
 @media screen and (max-width: 414px) {
+    .central-form form {
+        padding: 5px 0px 5px 0px;
+    }
+    .back-form {
+        margin: 0.5rem 0.5rem;
+    }
+    .col i {
+        font-size: 1.5rem;
+        margin-right: 0px;
+        padding: 5px 8px;
+    }
     .central-form h2 {
-        font-size: 16px;
+        font-size: 1.1rem;
+        margin: 4px;
     }
 }

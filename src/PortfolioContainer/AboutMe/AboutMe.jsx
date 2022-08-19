@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import ScreenHeading from '../../Utilities/ScreenHeading/ScreenHeading';
-import ScrollService from '../../Utilities/ScrollService';
-import Animations from '../../Utilities/Animations';
-import Leetcode from '../../assets/images/AboutMe/leetcode-logo.png';
-import HackerRank from '../../assets/images/AboutMe/hackerrank-logo.png';
-import './AboutMe.css';
+import React, { useEffect } from "react";
+import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
+import ScrollService from "../../Utilities/ScrollService";
+import Animations from "../../Utilities/Animations";
+import Leetcode from "../../assets/images/AboutMe/leetcode-logo.png";
+import HackerRank from "../../assets/images/AboutMe/hackerrank-logo.png";
+import "./AboutMe.css";
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -16,85 +16,117 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description:
-    <div> 
-       {/* <p><strong>"Change is inevitable. Growth is optional." - John C. Maxwell</strong></p> */}
-
-    <p>Growing up I was a science nerd. If it included astronomy or spaceflight I was watching or 
-      reading it. My dream was to be an astronaut but after high school, my eyesight was horrible and in 2004 all astronauts had to be pilots. </p>
-
-      <p>Instead, I had jobs ranging from flooring salesman to aerospace quality control, to retail sales, 
-        and rideshare driver. I was unhappy and looking for change. </p>
-     
-      <p>My programming journey started by watching SpaceX land their reusable Falcon 9 rockets on barges 
-        in the ocean. Since rockets involve spaceflight, I needed to know more about 
-        how these landings were even possible. </p>
-
-        <p>I researched it and read about the rocket flight control software. It allowed them to be steered by grid fins
-           and thus able to land. </p>
-
-      <p>Intrigued, I bought an Arduino flight controller and wrote some basic code to command a drone to
-         fly between two waypoints and land. That drone did exactly what I told it to and I was amazed. </p> 
-
-   <p>I could see now that programming had unlimited potential. However, I knew how challenging the job market is in the tech industry, 
-    so I began attending at Penn State University. </p>
-    
-    <p>In the years since enrollment, I have learnt several new languages and built a portfolio of projects, 
-      much of which is in the projects section.</p>
-
-   <p>In the future, I will be contributing to open-source projects, collaborating with others, and expanding my portfolio. </p>
-
-      <p>Outside of coding I enjoy fishing, diving, and protesting for the health of our coastal kelp beds 
-        around Southern California.  
-      </p>
-    </div>,
+    description: (
+      <div>
+        <div className="about-me-quote">
+          <p>
+            ❝ The only way to do great work is to love what you do. If you
+            haven't found it yet, keep looking. Don't settle. ❞ <br />
+            - Steve Jobs 
+          </p>
+        </div>
+        <p>
+          My 7 word self-description: Team-builder, communicator, quick learner, and
+          practicing problem solver.{" "}
+        </p>
+        <p>
+         After years in quality control, sales, and customer service I found my passion in software.{" "}
+        </p>
+        <p>
+          My tech journey began when I started watching SpaceX land their
+          rockets on ocean barges. As a space and physics guy, I needed to know more.{" "}
+        </p>
+        <p>
+          I learned how the flight control software enables
+          the rocket to be directed with grid fins towards a GPS target to land.{" "}
+        </p>
+        <p>
+          Intrigued, I bought an Arduino board to put on a drone and programmed it with basic Python code to fly between two waypoints and land. The drone executed my program and I became a passionate coder.{" "}
+        </p>
+        <p>
+          This opened my eyes to the unlimited potential use cases. I decided to finish my degree in Information Systems at Penn State University.{" "}
+        </p>
+        <p>
+          Since enrollment, I have learned several programming
+          languages, built 5 portfolio projects, used GitHub
+          version control, utilized Amazon Web Services.
+        </p>
+        <p>
+          In the future, my goals are to contribute to open-source projects,
+          collaborate with other developers, and add projects to my GitHub
+          directory.{" "}
+        </p>
+        <p>
+          Outside of coding I enjoy fishing, free diving, and fighting for the
+          health of coastal kelp beds around Southern California.
+        </p>
+      </div>
+    ),
     highlights: {
       bullets: [
-        'IntellijIDEA Ultimate, VSCode, Eclipse, Netbeans',
-        'Microsoft Office, Teams, Discord, Slack',
-        'JIRA, Trello, GitHub, Lucidchart, Visio',
-        'Google Apps, WordPress, Postman',
-        'MySQL, PostgreSQL',
-        'Amazon Web Services Lambda, IAM, and S3',
-        'Windows 10, MacOSx',
+        "Verbal and Written Communication",
+        "Team Leadership and Time Management",
+        "Detail and Quality Oriented",
+        "Research, Development and Technical Writing",
+        "Logic & Creative Problem Solving",
+        "Comfortable in Fast-paced Corporate Environments",
+        "Last Individual to Leave Every Day",
       ],
-      heading: 'Software Skills',
+      heading: "What Qualities I Bring to a Company?",
     },
   };
   const renderHighlight = () => {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
-      <div className='highlight' key={i}>
-        <div className='highlight-blob'> </div> <span> {value} </span>
+      <div className="highlight" key={i}>
+        <div className="highlight-blob"> </div> <span> {value} </span>
       </div>
     ));
   };
 
   return (
     <div
-      className='about-me-container  screen-container fade-in'
-      id={props.id || ''}>
-      <div className='about-me-parent'>
-        <ScreenHeading title={'ABOUT ME'} subHeading={'How I Got Into Software'} />
-        <div className='about-me-card'>
-          <div className='about-me-profile'> </div>
-          <div className='about-me-details'>
-            <span className='about-me-description'>
-              
+      className="about-me-container  screen-container fade-in"
+      id={props.id || ""}
+    >
+      <div className="about-me-parent">
+        <ScreenHeading
+          title={"About Me"}
+          subHeading={"How and why I became a developer"}
+        />
+        <div className="about-me-card">
+          <div className="about-me-profile"> </div>
+          <div className="about-me-details">
+            <span className="about-me-description">
               {SCREEN_CONSTANTS.description}
             </span>
-            <div className='about-me-highlights'>
-              <div className='highlight-heading'>
+            <div className="about-me-highlights">
+              <div className="highlight-heading">
                 <span> {SCREEN_CONSTANTS.highlights.heading} </span>
               </div>
               {renderHighlight()}
             </div>
-            <div className='about-me-options'>
-             <p> <strong>DSA Problem Solving Abilities  ▼</strong></p>
-             <a href='https://hackerrank.com/jcswanson' alt='HackerRank Link'> 
-             <img  className='code-social' src={HackerRank} alt="HackerRank Logo" /></a>
-             <a href='https://leetcode.com/jcswanson' alt='LeetCode Link'> 
-              <img  className='code-social' src={Leetcode} alt="LeetCode link"/></a>
+            <div className="about-me-options">
+              <p>
+                {" "}
+                <strong> Click below to see my problem solving practice in action ⬇</strong>
+              </p>
+              <div className="cta-links">
+              <a href="https://hackerrank.com/jcswanson" alt="HackerRank Link">
+                <img
+                  className="code-social hr"
+                  src={HackerRank}
+                  alt="HackerRank Logo"
+                />
+              </a>
+              <a href="https://leetcode.com/jcswanson" alt="LeetCode Link">
+                <img
+                  className="code-social lc"
+                  src={Leetcode}
+                  alt="LeetCode link"
+                />
+              </a>
             </div>
+          </div>
           </div>
         </div>
       </div>

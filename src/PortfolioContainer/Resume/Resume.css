@@ -4,30 +4,34 @@
     flex-direction: column;
     justify-content: center;
     min-height: fit-content;
-    margin: 120px 0;
+    /* margin: 0px 0; */
 }
 
 .resume-card {
     display: flex;
     height: 360px;
-    width: 1100px;
-    /* margin: 80px 0; */
+    max-width: 1200px;
+    margin: 60px 0 0 0;
+}
+
+.resume-content {
+    width: 90%;
 }
 
 .resume-bullets {
-    box-shadow: 5px 8px 20px 2px var(--gray);
+    /* box-shadow: 5px 8px 20px 2px var(--charcoal); */
     height: 100%;
     border-radius: 25px;
-    color: var(--blue-white);
-    background-color: var(--drk-space);
+    color: var(--charcoal);
+    background-color: var(--light-tan);
     width: 320px;
 }
 
 .resume-bullet-details {
     flex-grow: 1;
-    width: 600px;
+    width: 880px;
     overflow: hidden;
-    padding: 0 0 0 80px;
+    padding: 0 0 0 60px;
 }
 
 .experience-description {
@@ -40,7 +44,11 @@
 }
 
 .resume-details-carousal {
+    display: flex;
     transition: transform 0.8s ease-out;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .bullet-container {
@@ -49,22 +57,22 @@
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: var(--drk-space);
+    background-color: var(--light-tan);
     border-radius: 25px;
+    border: 3px solid var(--brown);
 }
 
 .bullets {
     width: 85%;
     position: relative;
     z-index: 2;
-    background-color: var(--drk-space-black);
 }
 
 .bullet {
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: var(--gray);
+    background-color: var(--light-brown);
     height: 45px;
     margin: 1rem 0;
     padding: 0.6rem;
@@ -73,10 +81,16 @@
     transition: width 0.7s ease-in-out;
 }
 
+.bullet.selected-bullet {
+    color: white;
+    width: 100%;
+}
+
 .bullet-label {
     font-size: 1.0rem;
     white-space: nowrap;
-    font-weight: 800;
+    font-weight: 900;
+    color: var(--charcoal);
     font-family: "Roboto", sans-serif;
 }
 
@@ -89,18 +103,9 @@
     width: 38px;
     height: 100%;
     z-index: 1;
-    border-radius: 25px 0 0px 25px;
-    background-color: var(--gray);
+    border-radius: 22px 0 0px 22px;
+    background-color: var(--light-brown);
     position: absolute;
-}
-
-.selected-bullet {
-    color: var(--orange);
-    width: 100%;
-}
-
-.selected-bullet .bullet-logo {
-    color: var(--orange);
 }
 
 .resume-screen-container {
@@ -108,7 +113,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 360px;
-    width: 100%;
+    width: 90%;
 }
 
 .resume-heading {
@@ -123,100 +128,106 @@
 }
 
 .resume-main-heading span {
-    color: var(--drk-space);
-    font-size: 1rem;
+    display: flex;
+    color: var(--light-tan);
+    font-size: 0.92rem;
     font-weight: 800;
     font-family: "Roboto", sans-serif;
+    align-items: flex-end;
 }
 
 .experience-description {
     max-width: 100%;
 }
 
-.heading-bullet {
-    position: absolute;
+
+/* .heading-bullet {
+     position: absolute;
     left: -30px;
-    height: 13px;
-    width: 13px;
+    height: 10px;
+    width: 10px;
     top: 6px;
     border-radius: 25px;
-    background-color: var(--gray);
-}
+    background-color: var(--peach); 
+} 
+*/
 
 .resume-sub-heading {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    color: var(--gray);
-    margin: 0.4rem 0 0.35rem 0;
+    color: var(--peach);
 }
 
 .resume-heading-description {
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-align: justify;
-    color: var(--drk-space);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: left;
+    color: var(--light-tan);
     font-family: "Roboto", sans-serif;
 }
 
 .heading-date {
-    background-color: var(--drk-space);
-    padding: 4px 12px;
+    background-color: var(--brown);
+    padding: 2px 8px;
     font-family: "Roboto", sans-serif;
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
     font-weight: 700;
-    border-radius: 25px;
-    color: var(--blue-white);
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--light-tan);
 }
 
 .skill-parent {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 50%;
+    width: 40%;
 }
 
 .programming-skills-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .skill-percentage {
     position: relative;
-    height: 2px;
-    top: 20px;
-    border-radius: 25px;
-    width: 70%;
-    background-color: var(--drk-space);
+    height: 5px;
+    top: 15px;
+    border-radius: 25px 25px;
+    width: 95%;
+    background-color: var(--skill-bg);
 }
 
 .skill-percentage .active-percentage-bar .percentage-bar-text {
-    color: var(--blue-white);
-    font-size: 0.7rem;
+    color: var(--charcoal);
+    font-size: 0.65rem;
     padding-right: 10px;
 }
 
 .skill-percentage .active-percentage-bar {
-    height: 20px;
+    height: 15px;
     bottom: 0px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     transition: 0.8s ease;
     position: absolute;
-    border-radius: 0px 25px 25px 0;
-    background-color: var(--sky-blue);
-    box-shadow: 4px 4px 10px 0 var(--drk-space);
+    border-radius: 5px 15px 15px 5px;
+    background-color: var(--skill-color);
+    /* box-shadow: 4px 4px 10px 0 var(--light-tan); */
 }
 
 .skill-parent span {
     font-family: "Roboto", sans-serif;
     font-size: 0.97rem;
-    font-weight: 700;
-    color: var(--drk-space);
+    font-weight: 900;
+    color: var(--light-tan);
 }
 
 
@@ -228,9 +239,6 @@
     }
     .resume-bullet-details {
         padding: 0 0 0 70px;
-    }
-    .programming-skills-container {
-        margin-left: 3rem;
     }
 }
 
@@ -246,18 +254,29 @@
     .bullets {
         width: 90%;
     }
+    .resume-details-carousal {
+        align-items: center;
+    }
+    .resume-screen-container {
+        justify-content: flex-start;
+    }
     .resume-card {
+        height: -moz-fit-content;
         height: fit-content;
         display: flex;
         flex-direction: column;
-        margin: 30px 0;
-        align-items: center;
-        width: 90%;
+        /* align-items: center; */
+        width: 96%;
     }
     .resume-bullet-details {
         height: 360px;
         padding: 0;
+        width: -moz-fit-content; 
         width: fit-content;
+    }
+    .resume-heading-description {
+        font-size: 0.65rem;
+
     }
     .resume-bullets {
         margin: 30px 0px;
@@ -265,5 +284,8 @@
     }
     .selected-bullet {
         width: 95%;
+    }
+    .heading-date {
+        font-size: 80%;
     }
 }

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 // import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ProjectItemStyles = styled.div`
- margin: 30px 30px;
- font-family: 'Roboto', sans-serif;
+  margin: 20px 5px;
+  font-family: "Roboto", sans-serif;
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -12,29 +12,26 @@ const ProjectItemStyles = styled.div`
     margin-top: 35px;
     overflow: hidden;
     display: inline-block;
-    border: 2px solid var(--sky-blue);
+    border: 3px solid var(--peach);
     img {
       height: 100%;
     }
   }
   .projectItem__info {
-    margin-top: 1rem;
-    background-color: var(--drk-space);
+    margin-top: 0.5rem;
+    background-color: var(--light-tan);
     padding: 0.2rem;
-    color: var(--blue-white);
-    border-radius: 25px;
   }
   .projectItem__title {
     font-size: 1.35rem;
-    font-family: 'Montserrat-Bold', sans-serif;
-    color: var(--orange);
+    font-family: "Montserrat-Black", sans-serif;
+    color: var(--brown);
   }
   .projectItem__desc {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     text-align: justify;
-    letter-spacing: 0.01rem;
-    line-height: 1.4rem;
+    line-height: 1.1rem;
     margin-top: 0.5rem;
   }
   .projectItem__stack {
@@ -43,9 +40,9 @@ const ProjectItemStyles = styled.div`
     width: -webkit-fill-available;
     min-width: fit-content;
     display: flex;
-    background: var(--sky-blue);
-    color: var(--blue-white);
-    font-weight: 600;
+    background: var(--dark-bronze);
+    color: var(--light-tan);
+    font-weight: 700;
     font-size: 0.75rem;
     text-align: center;
     justify-content: center;
@@ -54,42 +51,59 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__source {
     font-size: 1rem;
-    
   }
   .projectItem__stackcontainer {
     display: flex;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 350px;
+      height: 320px;
+      border-radius: 20px;
+    }
+    .projectItem__stack {
+      margin-right: 0.15rem;
+      height: 1.3rem;
+      font-size: 0.65rem;
+      border-radius: 7px;
+    }
+    .projectItem__desc {
+      font-size: 0.75rem;
+    }
+    .projectItem__title {
+      font-size: 1rem;
+    }
+    .projectItem__source {
+      font-size: 0.75rem;
     }
   }
 `;
 
 export default function ProjectItem({
   img = {},
-  title = 'Project Name',
+  title = "Project Name",
   techstack = [],
-  source = 'Repo link',
-  desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-}) 
-{
-  const techstacks = techstack.map(stack => <div  className='projectItem__stack'> {stack} </div>)
+  source = "Repo link",
+  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+}) {
+  const techstacks = techstack.map((stack) => (
+    <div className="projectItem__stack"> {stack} </div>
+  ));
   return (
     <ProjectItemStyles>
       <div className="projectItem__img">
         <img src={img} alt="project" />
       </div>
       <div className="projectItem__info">
-       
-          <h3 className="projectItem__title">{title}</h3>
- 
-        <div className='projectItem__stackcontainer'> {techstacks} </div>
+        <h3 className="projectItem__title">{title}</h3>
+
+        <div className="projectItem__stackcontainer"> {techstacks} </div>
         <p className="projectItem__desc">{desc}</p>
 
-        <div className='projectItem__source' > 
-          <a href={source} alt='source code'>SOURCE CODE</a>
-        </div> 
+        <div className="projectItem__source">
+          <a href={source} alt="source code">
+            SOURCE CODE
+          </a>
+        </div>
       </div>
     </ProjectItemStyles>
   );

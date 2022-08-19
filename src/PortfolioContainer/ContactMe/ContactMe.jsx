@@ -1,23 +1,14 @@
-import React, { useState } from "react";
-import { useForm } from 'react-hook-form';
-import axios from "axios";
-import { toast } from "react-toastify";
-import imgBack from "../../assets/images/ContactMe/mailz.jpeg";
-import load1 from "../../assets/images/ContactMe/load2.gif";
-import map from "../../assets/images/ContactMe/map-location.png"
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import ContactBg from "../../assets/images/ContactMe/neon-contact.png";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
-import {Footer} from "../Footer/Footer";
+import * as FaIcons from "react-icons/fa";
+import { Footer } from "../Footer/Footer";
 import "./ContactMe.css";
 
-
 export default function ContactMe(props) {
-  
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
-  
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -25,110 +16,90 @@ export default function ContactMe(props) {
 
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [banner, setBanner] = useState("");
-  const [bool, setBool] = useState(false);
-
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
-  };
-  console.log(name);
-  const submitForm = async (e) => {
+  //Subission Message
+  const [successMessage, setSuccessMessage] = useState("");
+  //emailjs API
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-    try {
-      let data = {
-        name,
-        email,
-        message,
-      };
-      setBool(true);
-      const res = await axios.post(`/contact`, data);
-      if (name.length === 0 || email.length === 0 || message.length === 0) {
-        setBanner(res.data.msg);
-        toast.error(res.data.msg);
-        setBool(false);
-      } else if (res.status === 200) {
-        setBanner(res.data.msg);
-        toast.success(res.data.msg);
-        setBool(false);
 
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    emailjs
+      .sendForm(
+        "service_5uijpyj",
+        "template_2mbz1vg",
+        form.current,
+        "g9xLO38GYdCefDzM3"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccessMessage("Message sent! I will contact you soon.");
+          console.log("Message was successful!");
+          e.target.reset();
+          setTimeout(() => setSuccessMessage(""), 8000);
+        },
+        (error) => {
+          console.log(error.text);
+          setTimeout(
+            () => setSuccessMessage("Message Failed! Error is " + error.text),
+            8000
+          );
+        }
+      );
   };
-//   const sendEmail = (e) => {
-//     e.preventDefault();
 
-//     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
   return (
     <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"I Want to Hear From You"} title={"CONTACT ME"} />
+      <ScreenHeading subHeading={"Let's get in touch"} title={"Contact Me"} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            Fill out the form below and submit to hire me or inquire about collaboration.
-          </h2>{" "}
-          <a href="https://www.facebook.com/johnchristianswanson">
-            <i className="fa fa-facebook-square" />
+            Fill out the form below or reach out on social media with any
+            opportunities.
+          </h2>
+          <a href="https://www.facebook.com/johnchristianswanson" alt="facebook link" target="_blank"rel="noreferrer">
+            <i className="fa fa-facebook-square"></i>
           </a>
-          <a href="https://www.instagram.com/johncswanson">
-            <i className="fa fa-instagram" />
+          <a href="https://www.instagram.com/johncswanson"alt="instagram link" target="_blank" rel="noreferrer">
+            <i className="fa fa-instagram"></i>
           </a>
-          <a href="https://www.linkedin.com/in/johncswanson/">
-            <i className="fa fa-linkedin-square" />
+          <a href="https://www.linkedin.com/in/johncswanson/"alt="linkedin link" target="_blank"rel="noreferrer" >
+          <i className="fa fa-linkedin-square"></i>
           </a>
-          <a href="https://github.com/jcswanson">
-            <i className="fa fa-github-square"></i>
+          <a href="https://github.com/jcswanson"alt="github link" target="_blank" >
+          <i className="fa fa-github-square"></i>
+          </a>
+          <a href="https://hackerrank.com/jcswanson"alt="hackerrank link" target="_blank"rel="noreferrer" >
+            <i><FaIcons.FaHackerrank /></i>
+          </a>
+          <a href="https://leetcode.com/jcswanson"alt="leetcode link" target="_blank"rel="noreferrer" >
+         <i className="fa fa-file-code-o" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/the_jcswanson"alt="twitter link" target="_blank" rel="noreferrer">
+          <i className="fa fa-twitter-square"></i>
           </a>
         </div>
         <div className="back-form">
           <div className="img-back">
-            
-            <h4>I'm located in Palm Desert, CA</h4>
-            <img src={map} alt="map not found" />
+            <img src={ContactBg} alt="img not found" />
           </div>
-          {/* {submitEmail} */}
-          <form onSubmit={submitForm}> 
-            <p>{banner}</p>
-            <label htmlFor="name">Name</label>
-            <input type="text" onChange={handleName} value={name} />
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="user_name" required />
 
-            <label htmlFor="email">Email</label>
-            <input type="email" onChange={handleEmail} value={email} />
+            <label>Email</label>
+            <input type="email" name="user_email" required />
 
-            <label htmlFor="message">Message</label>
-            <textarea type="text" onChange={handleMessage} value={message} />
+            <label>Message</label>
+            <textarea type="text" name="message" required />
+            <div className="send-button-and-message">
+              <div className="send-btn">
+                <button type="submit" value="Send">
+                  Send Message
+                </button>
 
-            <div className="send-btn">
-              <button type="submit">
-                Submit
-                {bool ? (
-                  <b className="load">
-                    <img src={load1} alt="image not responding" />
-                  </b>
-                ) : (
-                  ""
-                )}
-              </button>
+                <span className="message">{successMessage}</span>
+              </div>
             </div>
           </form>
         </div>
