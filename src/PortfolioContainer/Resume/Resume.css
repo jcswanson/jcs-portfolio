@@ -11,7 +11,7 @@
     display: flex;
     height: 360px;
     max-width: 1200px;
-    margin: 60px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 .resume-content {
@@ -19,7 +19,6 @@
 }
 
 .resume-bullets {
-    /* box-shadow: 5px 8px 20px 2px var(--charcoal); */
     height: 100%;
     border-radius: 25px;
     color: var(--charcoal);
@@ -35,8 +34,8 @@
 }
 
 .experience-description {
-    margin: 10px 0 0 0;
-    text-align: justify;
+
+    text-align: left;
 }
 
 .resume-description-text {
@@ -63,7 +62,7 @@
 }
 
 .bullets {
-    width: 85%;
+    width: 86%;
     position: relative;
     z-index: 2;
 }
@@ -72,46 +71,47 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: var(--light-brown);
-    height: 45px;
-    margin: 1rem 0;
+    background-color: var(--charcoal);
+    height: 50px;
+    margin: 1.2rem 0;
     padding: 0.6rem;
     border-radius: 25px;
-    width: 33px;
-    transition: width 0.7s ease-in-out;
+    width: 35px;
+    transition: width 0.8s ease-in-out;
 }
-
 .bullet.selected-bullet {
-    color: white;
+    background-color: var(--charcoal);
     width: 100%;
 }
 
 .bullet-label {
-    font-size: 1.0rem;
+    font-size: 1rem;
     white-space: nowrap;
-    font-weight: 900;
     color: var(--charcoal);
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat-Black", sans-serif;
 }
 
 .bullet-logo {
     height: 16px;
-    margin: 0 1.5rem 0.5rem 0.15rem;
+    margin: 0 2rem 0.7rem 0.1rem;
 }
-
+.bullet-logo svg {
+    font-size: 26px;
+    padding-right: 3px;
+}
 .bullet-icons {
-    width: 38px;
+    width: 45px;
     height: 100%;
     z-index: 1;
     border-radius: 22px 0 0px 22px;
-    background-color: var(--light-brown);
+    background-color: var(--charcoal);
     position: absolute;
 }
 
 .resume-screen-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 360px;
     width: 90%;
 }
@@ -130,9 +130,8 @@
 .resume-main-heading span {
     display: flex;
     color: var(--light-tan);
-    font-size: 0.92rem;
-    font-weight: 800;
-    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-family: "Roboto-Bold", sans-serif;
     align-items: flex-end;
 }
 
@@ -140,43 +139,28 @@
     max-width: 100%;
 }
 
-
-/* .heading-bullet {
-     position: absolute;
-    left: -30px;
-    height: 10px;
-    width: 10px;
-    top: 6px;
-    border-radius: 25px;
-    background-color: var(--peach); 
-} 
-*/
-
 .resume-sub-heading {
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    font-family: "Roboto-Medium", sans-serif;
     color: var(--peach);
 }
 
 .resume-heading-description {
-    font-size: 0.75rem;
-    font-weight: 400;
+    font-size: 0.9rem;
     text-align: left;
     color: var(--light-tan);
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto-Regular", sans-serif;
 }
 
 .heading-date {
     background-color: var(--brown);
     padding: 2px 8px;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.8rem;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
-    font-weight: 700;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 25px;
     color: var(--light-tan);
 }
 
@@ -206,7 +190,7 @@
 
 .skill-percentage .active-percentage-bar .percentage-bar-text {
     color: var(--charcoal);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     padding-right: 10px;
 }
 
@@ -220,13 +204,11 @@
     position: absolute;
     border-radius: 5px 15px 15px 5px;
     background-color: var(--skill-color);
-    /* box-shadow: 4px 4px 10px 0 var(--light-tan); */
 }
 
 .skill-parent span {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.97rem;
-    font-weight: 900;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 1rem;
     color: var(--light-tan);
 }
 
@@ -265,27 +247,59 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         width: 96%;
     }
     .resume-bullet-details {
         height: 360px;
         padding: 0;
-        width: -moz-fit-content; 
+        width: -moz-fit-content;
         width: fit-content;
     }
-    .resume-heading-description {
-        font-size: 0.65rem;
-
+    .resume-main-heading span {
+        font-size: 0.87rem;
     }
+    .resume-sub-heading {
+        font-size: 0.82rem;
+    }
+
+    .resume-heading-description {
+        font-size: 0.75rem;
+        margin: 0px 0 5px 0;
+    }
+
+    .heading-date {
+        font-size: 0.87rem;
+        text-align: center;
+        padding: 0px 5px;
+    }
+
     .resume-bullets {
         margin: 30px 0px;
         width: 100%;
     }
     .selected-bullet {
-        width: 95%;
+        width: 97%;
     }
-    .heading-date {
-        font-size: 80%;
+    /* Small Mobiles */
+    @media only screen and (max-width: 680px) {
+        .resume-main-heading span {
+            font-size: 0.72rem;
+        }
+        .resume-sub-heading {
+            font-size: 0.7rem;
+        }
+        .resume-heading-description {
+            font-size: 0.65rem;
+            text-align: left;
+        }
+        .heading-date {
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 2px 5px;
+        }
+        .skill-percentage .active-percentage-bar .percentage-bar-text {
+            font-size: 0.7rem;
+            padding-right: 5px;
+        }
     }
 }

@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import MoodyImg from "../images/Projects/moody-logo.png";
 import eFinanceImg from "../images/Projects/efinance-screencast.gif";
-import GreenCtgImg from "../images/Projects/greenctg.jpg";
-import PSUimg from "../images/Projects/psu-adv.png";
+import PortfolioImg from "../images/Projects/jcswanson-screenshot.png";
+import PSUImg from "../images/Projects/psu-adv.png";
 import FishForecastImg from "../images/Projects/fish-repo-logo.png";
 
 const projects = [
@@ -20,7 +20,7 @@ const projects = [
     techStack: ["React.js", "CSS", "AWS"],
     source: "https://github.com/jcswanson/jcswanson.com",
     desc: "A personal portfolio single page app (SPA) and you're viewing it now. Deployed using AWS Amplify hooked into GitHub to provide CI/CD. Created to display professional details to future employers and build a personal brand.",
-    img: GreenCtgImg,
+    img: PortfolioImg,
   },
   {
     id: uuidv4(),
@@ -28,7 +28,7 @@ const projects = [
     techStack: ["Java", "Swing", "XML"],
     source: "https://github.com/jcswanson/psu-adventure-game",
     desc: "RPG Java game with a 2D world built using the MVC design pattern. Front-end built using Java Swing and XML to store game data. Three game themes used to demonstrate OOP principles.",
-    img: PSUimg,
+    img: PSUImg,
   },
   {
     id: uuidv4(),

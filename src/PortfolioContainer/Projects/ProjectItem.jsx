@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const ProjectItemStyles = styled.div`
   margin: 20px 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -23,15 +23,14 @@ const ProjectItemStyles = styled.div`
     padding: 0.2rem;
   }
   .projectItem__title {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     font-family: "Montserrat-Black", sans-serif;
-    color: var(--brown);
+    color: var(--charcoal);
   }
   .projectItem__desc {
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.89rem;
     text-align: justify;
-    line-height: 1.1rem;
+    line-height: 1.25rem;
     margin-top: 0.5rem;
   }
   .projectItem__stack {
@@ -40,14 +39,13 @@ const ProjectItemStyles = styled.div`
     width: -webkit-fill-available;
     min-width: fit-content;
     display: flex;
-    background: var(--dark-bronze);
+    background: var(--brown);
     color: var(--light-tan);
-    font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-radius: 9px;
+    border-radius: 10px;
   }
   .projectItem__source {
     font-size: 1rem;
@@ -79,32 +77,32 @@ const ProjectItemStyles = styled.div`
 `;
 
 export default function ProjectItem({
-  img = {},
-  title = "Project Name",
-  techstack = [],
-  source = "Repo link",
-  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-}) {
+                                      img = {},
+                                      title = "Project Name",
+                                      techstack = [],
+                                      source = "Repo link",
+                                      desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                    }) {
   const techstacks = techstack.map((stack) => (
-    <div className="projectItem__stack"> {stack} </div>
+      <div className="projectItem__stack"> {stack} </div>
   ));
   return (
-    <ProjectItemStyles>
-      <div className="projectItem__img">
-        <img src={img} alt="project" />
-      </div>
-      <div className="projectItem__info">
-        <h3 className="projectItem__title">{title}</h3>
-
-        <div className="projectItem__stackcontainer"> {techstacks} </div>
-        <p className="projectItem__desc">{desc}</p>
-
-        <div className="projectItem__source">
-          <a href={source} alt="source code">
-            SOURCE CODE
-          </a>
+      <ProjectItemStyles>
+        <div className="projectItem__img">
+          <img src={img} alt="project" />
         </div>
-      </div>
-    </ProjectItemStyles>
+        <div className="projectItem__info">
+          <h3 className="projectItem__title">{title}</h3>
+
+          <div className="projectItem__stackcontainer"> {techstacks} </div>
+          <p className="projectItem__desc">{desc}</p>
+
+          <div className="projectItem__source">
+            <a href={source} alt="source code">
+              SOURCE CODE
+            </a>
+          </div>
+        </div>
+      </ProjectItemStyles>
   );
 }

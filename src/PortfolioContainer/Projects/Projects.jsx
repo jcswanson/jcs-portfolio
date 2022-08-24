@@ -81,70 +81,70 @@ const ProjectStyle = styled.div`
 `;
 
 export default function Projects(props) {
-  let fadeInScreenHandler = (screen) => {
-    if (screen.fadeInScreen !== props.id) return;
-    Animations.animations.fadeInScreen(props.id);
-  };
-
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-  useEffect(() => {
-    return () => {
-      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
-      fadeInSubscription.unsubscribe();
+    let fadeInScreenHandler = (screen) => {
+        if (screen.fadeInScreen !== props.id) return;
+        Animations.animations.fadeInScreen(props.id);
     };
-  }, [fadeInSubscription]);
-  return (
-    <div className="project-component fade-in" id={props.id || ""}>
-      <ProjectStyle>
-        <ScreenHeading
-          title={"Projects"}
-          subHeading={"Recent software I've developed"}
-        />
 
-        <div className="container">
-          <div className="projects__allItems">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              slidesPerView={1}
-              loop={true}
-              speed={800}
-              autoplay={{ enabled: true, delay: 5000 }}
-              navigation
-              pagination={{ dynamicBullets: true, clickable: true }}
-              breakpoints={{
-                // when window width is >= 640px
-                640: {
-                  slidesPerView: 1,
-                },
-                // when window width is >= 768px
-                768: {
-                  slidesPerView: 2,
-                },
-                // when window width is >= 1200px
-                1200: {
-                  slidesPerView: 3,
-                },
-              }}
-            >
-              {projects.map((project, index) => {
-                if (index >= projects.length - 1) return;
-                return (
-                  <SwiperSlide key={project.id}>
-                    <ProjectItem
-                      title={project.name}
-                      img={project.img}
-                      techstack={project.techStack}
-                      source={project.source}
-                      desc={project.desc}
-                    />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
+    const fadeInSubscription =
+        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    useEffect(() => {
+        return () => {
+            /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+            fadeInSubscription.unsubscribe();
+        };
+    }, [fadeInSubscription]);
+    return (
+        <div className="project-component fade-in" id={props.id || ""}>
+            <ProjectStyle>
+                <ScreenHeading
+                    title={"Projects"}
+                    subHeading={"Recent software I've developed"}
+                />
+
+                <div className="container">
+                    <div className="projects__allItems">
+                        <Swiper
+                            modules={[Navigation, Pagination, Autoplay]}
+                            slidesPerView={1}
+                            loop={true}
+                            speed={800}
+                            autoplay={{ enabled: true, delay: 8000 }}
+                            navigation
+                            pagination={{ dynamicBullets: true, clickable: true }}
+                            breakpoints={{
+                                // when window width is >= 640px
+                                640: {
+                                    slidesPerView: 1,
+                                },
+                                // when window width is >= 768px
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                // when window width is >= 1200px
+                                1200: {
+                                    slidesPerView: 3,
+                                },
+                            }}
+                        >
+                            {projects.map((project, index) => {
+                                if (index >= projects.length - 1) return;
+                                return (
+                                    <SwiperSlide key={project.id}>
+                                        <ProjectItem
+                                            title={project.name}
+                                            img={project.img}
+                                            techstack={project.techStack}
+                                            source={project.source}
+                                            desc={project.desc}
+                                        />
+                                    </SwiperSlide>
+                                );
+                            })}
+                        </Swiper>
+                    </div>
+                </div>
+            </ProjectStyle>
         </div>
-      </ProjectStyle>
-    </div>
-  );
+    );
 }
