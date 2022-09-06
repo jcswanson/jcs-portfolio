@@ -44,7 +44,7 @@ export default function AboutMe(props) {
           Intrigued, I bought an Arduino board to put on a drone and programmed it with basic Python code to fly between two waypoints and land. The drone executed my program and I became a passionate coder.{" "}
         </p>
         <p>
-          This opened my eyes to the unlimited potential use cases. I decided to finish my degree in Information Systems at Penn State University.{" "}
+          This opened my eyes to the unlimited potential use cases. I now am finishing my degree in Information Sceience & Tech with the Information Systems Development option at Penn State University.{" "}
         </p>{" "}
         <p>
           Since enrollment, I have become proficient in several programming
