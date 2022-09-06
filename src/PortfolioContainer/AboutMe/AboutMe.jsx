@@ -90,7 +90,7 @@ export default function AboutMe(props) {
             <div className="about-me-parent">
                 <ScreenHeading
                     title={"About Me"}
-                    subHeading={"Why did I became a developer?"}
+                    subHeading={"Why I became a developer?"}
                 />
                 <div className="about-me-card">
                     <div className="about-me-profile"> </div>
