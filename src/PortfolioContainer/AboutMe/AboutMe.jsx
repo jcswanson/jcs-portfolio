@@ -25,8 +25,8 @@ export default function AboutMe(props) {
             - Steve Jobs 
           </p>{" "}
         </div>
-        <p>
-          My 7 word self-description: Team-builder, communicator, quick learner, and
+     <p>
+          My 7-word self-description: Team-builder, communicator, quick learner, and
           practicing problem solver.{" "}
         </p>
         <p>
@@ -52,11 +52,11 @@ export default function AboutMe(props) {
           version control, and successfully integrated Amazon Web Services into some of my projects.{" "}
         </p>
         <p>
-          In the near future, my goals are: contribute to open-source projects,
+          In the near future, my goals are: to contribute to open-source projects,
           collaborate with other developers, and continue to improve my DSA skills through LeetCode and HackerRank.{" "}
         </p>
         <p>
-          Outside of coding I enjoy fishing, free diving, and fighting for the
+          Outside of coding, I enjoy fishing, free diving, and fighting for the
           health of coastal kelp beds around Southern California.
         </p>
       </div>
