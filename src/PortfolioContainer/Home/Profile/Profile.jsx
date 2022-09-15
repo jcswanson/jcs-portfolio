@@ -24,7 +24,7 @@ export default function Profile() {
                 <a href="https://www.instagram.com/johncswanson/"alt="instagram link" target="_blank"rel="noopener">
                   <i className="fa fa-instagram"></i>
                 </a>
-                <a href="https://twitter.com.com/the_jcswanson/"alt="twitter link" target="_blank" rel="noopener">
+                <a href="https://twitter.com/the_jcswanson/"alt="twitter link" target="_blank" rel="noopener">
                   <i className="fa fa-twitter-square"></i>
                 </a>
                 <a href="https://github.com/jcswanson"alt="github link" target="_blank" rel="noopener">
@@ -42,7 +42,7 @@ export default function Profile() {
             </div>
             <div className="profile-details-role">
             <span className="profile-role-text">
-              I build applications that address use cases important to primary stakeholders. I can code in Java, Spring Boot, and Python.
+              I build applications addressing important problems surrounding users in everyday life. I love coding with Java, Spring Boot, and Python.
             </span>
             </div>
             <div className="profile-options">
