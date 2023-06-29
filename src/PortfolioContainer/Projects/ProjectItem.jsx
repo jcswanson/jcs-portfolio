@@ -99,7 +99,7 @@ export default function ProjectItem({
 
           <div className="projectItem__source">
             <a href={source} alt="source code">
-              SOURCE CODE
+              LINK TO SOURCE
             </a>
           </div>
         </div>

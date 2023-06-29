@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import MoodyImg from "../images/Projects/moody-logo.png";
 import eFinanceImg from "../images/Projects/efinance-screencast.gif";
+import RegistryImg from "../images/Projects/OGCRegistryD100.gif";
 import PortfolioImg from "../images/Projects/jcswanson-screenshot.png";
 import PSUImg from "../images/Projects/psu-adv.png";
 import FishForecastImg from "../images/Projects/fish-repo-logo.png";
@@ -13,6 +14,14 @@ const projects = [
     source: "https://github.com/jcswanson/eFinance",
     desc: "A secure web application in which clients apply for loans and administrators then review the applications to approve or deny the clients. Developed with basic Spring Security authentication and BCrypt password encryption.",
     img: eFinanceImg,
+  },
+  {
+    id: uuidv4(),
+    name: "OGC Disaster Pilot Data Registry",
+    techStack: ["ArcGIS Online", "ArcGIS Hub", "APIs", "HTML/CSS"],
+    source: "https://ogc2023pilots-geoplatform.hub.arcgis.com/",
+    desc: "As Project Manager my team and I built a data registry to satisfy the requirements of the 2023 OGC Disaster Pilot that required supporting near-real-time registration, search, and discovery of ARD data sources, DRI workflows, and DRI-focused applications. Still in development so you need an ArcGIS account to view link.",
+    img: RegistryImg,
   },
   {
     id: uuidv4(),
