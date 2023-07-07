@@ -20,58 +20,68 @@ export default function AboutMe(props) {
       <div>
         <div className="about-me-quote">
           <p>
-            ❝ The only way to do great work is to love what you do. If you
-            haven't found it yet, keep looking. Don't settle. ❞ <br />
-            - Steve Jobs 
+            ❝ GIS is waking up the world to the power of geography, this 
+            science of integration, and has the framework for creating a 
+            better future. ❞ <br />
+            - Jack Dangermond
           </p>{" "}
         </div>
-     <p>
-          My 7-word self-description: Team-builder, communicator, quick learner, and
-          practicing problem solver.{" "}
+        <p>
+        A recent graduate of Penn State University in Information Science and Technology,
+        I embarked on a career transition from Quality Control in aerospace to the dynamic
+        field of IT. With a passion for space sciences, satellites, and
+        geography, my journey into the tech world was sparked by witnessing SpaceX's
+        groundbreaking rocket landings in 2016. This groundbreaking event made me realize
+        the potential of cheaper transportation on future remote sensing satellites and technologies{" "}
         </p>
         <p>
-         After years in quality control, sales, and customer service I found my passion in software.{" "}
+        I made the decision to return to school at Penn State. In May 2023, I successfully 
+        graduated with a focus on Information Systems Development and earned an 
+        Undergraduate Certificate in Security and Risk Analysis.{" "}
         </p>
         <p>
-          My tech journey began when I started watching SpaceX land their
-          rockets on ocean barges. As a space and physics guy, I needed to know more.{" "}
+        Currently, I am working as an intern Project Manager for the USGS FGDC 
+        GeoPathways program, where I oversee a team of 30+ interns
+        participating in the Open Geospatial Consortium's 2023 Disaster Pilot Initiative. In this role
+        I've worked closely with our sponsors ESRI, Amazon, Microsoft, Voyager Search and 
+        partnered with various other federal agencies.{" "}
+        </p>
+       
+        <p>
+        Beyond my academic pursuits, I find immense joy in engaging in various activities. 
+        Free diving, baseball, ice hockey, and spearfishing in the captivating kelp beds 
+        off the coast of South Los Angeles are among my favorite pastimes.{" "}      
         </p>
         <p>
-          I learned how the flight control software enables
-          the rocket to be directed with grid fins towards a GPS target to land.{" "}
+        It is through these experiences, particularly my encounters with the mesmerizing beauty 
+        of the kelp beds, that my desire to utilize GIS and software to support private industry 
+        and governmental efforts in conserving our oceans and their precious ecosystems has been ignited.{" "}        
         </p>
         <p>
-          Intrigued, I bought an Arduino board to put on a drone and programmed it with basic Python code to fly between two waypoints and land. The drone executed my program and I became a passionate coder.{" "}
+        As I continue to develop my skills and gain valuable experience, I am eagerly seeking 
+        full-time employment opportunities that align with my passion for GIS/software 
+        development, and making a positive impact on our global environment.{" "}
         </p>
         <p>
-          This opened my eyes to the unlimited potential use cases. I now am finishing my degree in Information Science & Tech with the Information Systems Development option at Penn State University.{" "}
-        </p>{" "}
-        <p>
-          Since enrollment, I have become proficient in several programming
-          languages, developed 5 portfolio projects, utilized GitHub
-          version control, and successfully integrated Amazon Web Services into some of my projects.{" "}
+        With a solid educational foundation, a drive to excel, and a fervent commitment to the 
+        conservation of our natural resources, I am poised to contribute my expertise and 
+        dedication to organizations that share my vision of a data-driven sustainable future.{" "}
         </p>
-        <p>
-          In the near future, my goals are: to contribute to open-source projects,
-          collaborate with other developers, and continue to improve my DSA skills through LeetCode and HackerRank.{" "}
-        </p>
-        <p>
-          Outside of coding, I enjoy fishing, free diving, and fighting for the
-          health of coastal kelp beds around Southern California.
-        </p>
+      
       </div>
     ),
       highlights: {
           bullets: [
               "Verbal and Written Communication",
-              "Team Building and Time Management",
-              "Eye for Detail and Quality Inspection",
-              "Topic Research and Technical Writing",
-              "Critical Thinking and Problem Solving",
-              "Adapting to Fast Evolving Environments",
-              "Quick to Learn New Subjects",
+              "Team Leadership & Collaboration",
+              "Detail-Oriented Decision Making",
+              "Group Motivation",
+              "Conflict Management",
+              "Adaptation to Changing Requirements",
+              "Time Management",
+              "Critical Thinking & Problem Solving"
           ],
-          heading: "Intrinsic Work Qualifications",
+          heading: "Top Soft Skills",
       },
   };
     const renderHighlight = () => {
@@ -90,7 +100,7 @@ export default function AboutMe(props) {
             <div className="about-me-parent">
                 <ScreenHeading
                     title={"About Me"}
-                    subHeading={"Why I became a developer?"}
+                    subHeading={"How I got here"}
                 />
                 <div className="about-me-card">
                     <div className="about-me-profile"> </div>
@@ -104,7 +114,7 @@ export default function AboutMe(props) {
                             </div>
                             {renderHighlight()}
                         </div>
-                        <div className="about-me-options">
+                      {/*   <div className="about-me-options">
                             <p>
                                 {" "}
                                 Click below to see my problem solving practice in action 👇
@@ -125,7 +135,7 @@ export default function AboutMe(props) {
                                     />
                                 </a>
                             </div>
-                        </div>
+                        </div>  */}
                     </div>
                 </div>
             </div>

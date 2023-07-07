@@ -15,19 +15,19 @@ export default function Profile() {
           <div className="profile-details">
             <div className="colz">
               <div className="cols-icon">
-                <a href="https://www.facebook.com/john.swanson2" alt="facebook link" target="_blank"rel="noopener" >
+                <a href="https://www.facebook.com/john.swanson2" alt="facebook link" target="_blank"rel="noreferrer" >
                   <i className="fa fa-facebook-square"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/johncswanson/"alt="linkedin link" target="_blank"rel="noopener">
+                <a href="https://www.linkedin.com/in/johncswanson/"alt="linkedin link" target="_blank"rel="noreferrer">
                   <i className="fa fa-linkedin-square"></i>
                 </a>
-                <a href="https://www.instagram.com/johncswanson/"alt="instagram link" target="_blank"rel="noopener">
+                <a href="https://www.instagram.com/johncswanson/"alt="instagram link" target="_blank"rel="noreferrer">
                   <i className="fa fa-instagram"></i>
                 </a>
-                <a href="https://twitter.com/the_jcswanson/"alt="twitter link" target="_blank" rel="noopener">
+                <a href="https://twitter.com/the_jcswanson/"alt="twitter link" target="_blank" rel="noreferrer">
                   <i className="fa fa-twitter-square"></i>
                 </a>
-                <a href="https://github.com/jcswanson"alt="github link" target="_blank" rel="noopener">
+                <a href="https://github.com/jcswanson"alt="github link" target="_blank" rel="noreferrer">
                   <i className="fa fa-github-square"></i>
                 </a>
               </div>
@@ -37,12 +37,12 @@ export default function Profile() {
               {" "}
               Hi I'm{" "}
               <span className="highlighted-text text-shadow-pop-tr">John</span>
-              <h4 className="profile-job-title">Software Developer</h4>
+              <h4 className="profile-job-title">Information Systems Developer</h4>
             </span>
             </div>
             <div className="profile-details-role">
             <span className="profile-role-text">
-              I build applications addressing important problems surrounding users in everyday life. I love coding with Java, Spring Boot, and Python.
+            I build solutions to GIS/IS problems, helping organizations utilize data-driven indicators and cutting-edge technology.            
             </span>
             </div>
             <div className="profile-options">

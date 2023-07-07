@@ -40,6 +40,7 @@ const projects = [
     desc: "RPG Java game with a 2D world built using the MVC design pattern. Front-end built using Java Swing and XML to store game data. Three game themes used to demonstrate OOP principles.",
     img: PSUImg,
   },
+  
   {
     id: uuidv4(),
     name: "Fish Forecaster",
@@ -50,20 +51,21 @@ const projects = [
   },
   {
     id: uuidv4(),
+    name: "StoryMaps Portfolio",
+    techStack: ["ESRI", "ArcGIS StoryMaps", "ArcGIS Online"],
+    source: "https://storymaps.arcgis.com/stories/e5aa3e50227d4c47b3320d4b4e1a5006/",
+    desc: "My version of this website built using ArcGIS StoryMaps during my internship with the USGS Federal Geographic Data Committee and demonstrating my knowledge of ArcGIS Online SaaS.",
+    img: StoryMapsImg,
+  },
+  {
+    id: uuidv4(),
     name: "Moodypedia",
     techStack: ["JavaFXML", "SceneBuilder"],
     source: "https://github.com/jcswanson/moodypedia",
     desc: "Users record their daily mood using colors and a custom calendar. Uses basic login authentication which stores account and registration details with serialization.        ",
     img: MoodyImg,
   },
-  {
-    id: uuidv4(),
-    name: "ArcGIS Online Portfolio",
-    techStack: ["ESRI", "ArcGIS StoryMaps", "AGOL"],
-    source: "https://storymaps.arcgis.com/stories/e5aa3e50227d4c47b3320d4b4e1a5006/",
-    desc: "My version of this website built using ArcGIS StoryMaps during my internship with the USGS Federal Geographic Data Committee and demonstrating my knowledge of ArcGIS Online SaaS.",
-    img: StoryMapsImg,
-  },
+  
 ];
 
 export default projects;

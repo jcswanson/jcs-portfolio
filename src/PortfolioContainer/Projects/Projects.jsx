@@ -128,7 +128,7 @@ export default function Projects(props) {
                             }}
                         >
                             {projects.map((project, index) => {
-                                if (index >= projects.length - 1) return;
+                                if (index >= projects.length) return;
                                 return (
                                     <SwiperSlide key={project.id}>
                                         <ProjectItem
