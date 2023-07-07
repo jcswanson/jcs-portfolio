@@ -53,6 +53,7 @@ export default function Testimonial(props) {
               id="testimonial-carousel"
               {...options} 
             >
+
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
@@ -69,6 +70,28 @@ export default function Testimonial(props) {
                   <div className="client-info">
                     <h5>- Glen Olson </h5>{" "}
                     <p>Head of Quality at DASCO Engineering </p>{" "}
+                  </div>{" "}
+                </div>{" "}
+              </div>{" "}
+
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      As Deputy Project Manager for the FGDC
+                       GeoPathways Program's participation in the OGC's 2023 Disaster Pilot,
+                        John proved an exceptional leader and role
+                         model. He effortlessly represented our
+                        team in meetings with multiple stakeholders,
+                        leaving a lasting positive impression and 
+                        securing multiple high-level partnerships.  {" "}
+                      {/* <i className="fa fa-quote-right" /> */}
+                    </p>{" "}
+                  </div>{" "}
+                  <div className="client-info">
+                    <h5>- Pooja Muthuraj </h5>{" "}
+                    <p>Communications Lead Intern at FGDC GeoPathways </p>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

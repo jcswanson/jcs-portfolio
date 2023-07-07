@@ -7,14 +7,18 @@ const ProjectItemStyles = styled.div`
   font-family: "Roboto-Regular", sans-serif;
   .projectItem__img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 25px;
     margin-top: 35px;
     overflow: hidden;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 3px solid var(--peach);
     img {
-      height: 100%;
+      text-align: center;
+      max-width: 100%;
+      height: auto;
     }
   }
   .projectItem__info {
@@ -55,7 +59,7 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 320px;
+      height: 280px;
       border-radius: 20px;
     }
     .projectItem__stack {

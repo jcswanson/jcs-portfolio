@@ -25,7 +25,7 @@ export default function ContactMe(props) {
 
     emailjs
       .sendForm(
-        "service_5uijpyj",
+        "service_jzaowtt",
         "template_2mbz1vg",
         form.current,
         "g9xLO38GYdCefDzM3"

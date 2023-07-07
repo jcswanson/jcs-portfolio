@@ -99,7 +99,7 @@ export default function Projects(props) {
             <ProjectStyle>
                 <ScreenHeading
                     title={"Projects"}
-                    subHeading={"Recent software I've developed"}
+                    subHeading={"Recent projects I've worked on"}
                 />
 
                 <div className="container">
@@ -122,7 +122,7 @@ export default function Projects(props) {
                                     slidesPerView: 2,
                                 },
                                 // when window width is >= 1200px
-                                1200: {
+                                1280: {
                                     slidesPerView: 3,
                                 },
                             }}
