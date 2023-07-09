@@ -44,7 +44,7 @@ export default function Testimonial(props) {
       <section className="testimonial-section">
         <ScreenHeading
           title={"Testimonials"}
-          subHeading={"What do employers and colleagues think of me?"}
+          subHeading={"What employers and colleagues think of me"}
         />{" "}
         <div className="container">
           <div className="row">

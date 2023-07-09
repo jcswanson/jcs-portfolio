@@ -42,7 +42,7 @@ export default function Profile() {
             </div>
             <div className="profile-details-role">
             <span className="profile-role-text">
-            I build solutions to GIS/IS problems, helping organizations utilize data-driven indicators and cutting-edge technology.            
+            I build information systems, helping organizations utilize data into decision ready indicators.            
             </span>
             </div>
             <div className="profile-options">
@@ -51,7 +51,7 @@ export default function Profile() {
                   className="btn primary-btn">
                 Hire Me
               </button>
-              <a href="https://drive.google.com/file/d/1SSeVXdLuiVrwTG6KyVRWCsEzObrqmcZB/view?usp=sharing" target="_blank" rel="noreferrer" alt="jcswanson resume link">
+              <a href="https://docs.google.com/document/d/1qFAcTyu8Syl_miA326PiXjhg3CiPay8rG8qSh4UUfOM/edit?usp=sharing" target="_blank" rel="noreferrer" alt="jcswanson resume link">
                 <button className="btn highlighted-btn">My Resume</button>
               </a>
             </div>

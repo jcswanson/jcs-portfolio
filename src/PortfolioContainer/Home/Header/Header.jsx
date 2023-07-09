@@ -6,7 +6,7 @@ import {
 import ScrollService from "../../../Utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import JCSlogo from "../../../assets/images/Home/logos/bracket-icon-jcswanson-logo.png";
+import JCSlogo from "../../../assets/images/Home/logos/JCS-logo.png";
 import "./Header.css";
 
 export default function Header() {
@@ -72,8 +72,8 @@ export default function Header() {
           <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
         </div>
         <div className="header-logo">
-          {/* <img src={JCSlogo} alt="No logo" /> */}
-          <span>jcswanson</span>
+          <img src={JCSlogo} alt="No logo" /> 
+          
         </div>
         <div
           className={
