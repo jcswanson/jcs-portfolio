@@ -59,7 +59,7 @@ const Resume = (props) => {
       icon: <FaIcons.FaUsersCog />,
     },
     {
-      title: "Coding Skills",
+      title: "Tech Skills",
       icon: <FaIcons.FaFileCode/>,
     },
     {
@@ -73,12 +73,20 @@ const Resume = (props) => {
     { skill: "Java", ratingPercentage: 80 },
     { skill: "Spring Boot", ratingPercentage: 70 },
     { skill: "HTML/CSS", ratingPercentage: 70 },
+    { skill: "ArcGIS Online", ratingPercentage: 70 },
     { skill: "Python", ratingPercentage: 60 },
     { skill: "JavaScript", ratingPercentage: 50 },
     { skill: "ReactJS", ratingPercentage: 40 },
     { skill: "SQL", ratingPercentage: 40 },
   ];
   const employment = [
+   {
+      business: "Federal Geographic Data Committee",
+      duration: { fromDate: "2022", toDate: "Current" },
+      description:
+          "As a program manager, I oversaw a Fire Science team of 34 interns and developed a framework to bring together partners, mobilize data, technical infrastructure, and modeling capacities to develop innovative products and services that responded to the Open Geospatial Consortium's 2023 Disaster Pilot Initiative.",
+      jobTitle: "Program Manager",
+    },
     {
       business: "UBER / LYFT",
       duration: { fromDate: "2018", toDate: "Current" },
@@ -93,13 +101,7 @@ const Resume = (props) => {
           "Earned 2 Top Monthly Sales awards by demonstrating excellent customer service. Programmed customers' drone flight controllers.",
       jobTitle: "Aircraft/Drone Sales",
     },
-    {
-      business: "DASCO ENGINEERING",
-      duration: { fromDate: "2012", toDate: "2014" },
-      description:
-          "Completed 120+ manufacturing reports and equipped 50+ planes by inspecting landing gear assembly of Boeing 787s and logging part measurements to confirm quality. Streamlined client audit process by restructuring and maintaining the FAI report's database.",
-      jobTitle: "Quality Control Technician",
-    },
+    
   ];
 
   const resumeDetails = [
@@ -116,12 +118,12 @@ const Resume = (props) => {
           }
       />
       <ResumeHeading
-          heading={"EL CAMINO COLLEGE"}
-          subHeading={"Quality Control Engineering/Astronomy"}
-          fromDate={"2004"}
-          toDate={"2008"}
+          heading={"PENN STATE UNIVERSITY"}
+          subHeading={"UG Certificate Security & Risk Analysis"}
+          fromDate={"2021"}
+          toDate={"2023"}
           description={
-            "GPA: 3.33 | ACTIVITIES: Baseball (2005), 1 year of Astronomy & 2 years of Quality Engineering."
+            "GPA: 3.56 | COURSES: Cybersecurity, Identity & Access Management, Data Governance"
           }
       />
       <ResumeHeading
