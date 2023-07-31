@@ -124,9 +124,9 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .primary-btn:hover {
-    color: var(--charcoal);
-    background-color: var(--khaki-tan);
-    border: 3px solid var(--khaki-tan);
+    color: var(--light-tan);
+    background-color: var(--brown);
+    border: 3px solid var(--brown);
 }
 
 .highlighted-btn {
