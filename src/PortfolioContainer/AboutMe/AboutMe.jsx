@@ -20,10 +20,8 @@ export default function AboutMe(props) {
       <div>
         <div className="about-me-quote">
           <p>
-            ❝ GIS is waking up the world to the power of geography, this 
-            science of integration, and has the framework for creating a 
-            better future. ❞ <br />
-            - Jack Dangermond
+            ❝ The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. <br></br>- Steve Jobs ❞ 
+           
           </p>{" "}
         </div>
         <p>
@@ -54,12 +52,12 @@ export default function AboutMe(props) {
         </p>
         <p>
         It is through these experiences, particularly my encounters with the mesmerizing beauty 
-        of the kelp beds, that my desire to utilize GIS and software to support private industry 
+        of the kelp beds, that my desire to utilize GIS with programming to support private industry 
         and governmental efforts in conserving our oceans and their precious ecosystems has been ignited.{" "}        
         </p>
         <p>
         As I continue to develop my skills and gain valuable experience, I am eagerly seeking 
-        full-time employment opportunities that align with my passion for GIS/software 
+        full-time employment opportunities that align with my passion for information systems
         development, and making a positive impact on our global environment.{" "}
         </p>
         <p>
@@ -114,7 +112,7 @@ export default function AboutMe(props) {
                             </div>
                             {renderHighlight()}
                         </div>
-                      {/*   <div className="about-me-options">
+                         <div className="about-me-options">
                             <p>
                                 {" "}
                                 Click below to see my problem solving practice in action 👇
@@ -135,7 +133,7 @@ export default function AboutMe(props) {
                                     />
                                 </a>
                             </div>
-                        </div>  */}
+                        </div>  
                     </div>
                 </div>
             </div>
