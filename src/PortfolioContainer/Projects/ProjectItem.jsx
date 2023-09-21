@@ -14,7 +14,7 @@ const ProjectItemStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid var(--peach);
+    border: 3px solid var(--brown);
     img {
       text-align: center;
       max-width: 100%;
@@ -43,7 +43,7 @@ const ProjectItemStyles = styled.div`
     width: -webkit-fill-available;
     min-width: fit-content;
     display: flex;
-    background: var(--brown);
+    background: var(--dark-bronze);
     color: var(--light-tan);
     font-size: 0.78rem;
     text-align: center;

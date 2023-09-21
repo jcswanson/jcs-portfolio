@@ -91,14 +91,20 @@
     font-family: "Montserrat-Black", sans-serif;
 }
 
+.bullet-label:hover {
+    color: var(--dark-bronze);
+}
+
 .bullet-logo {
     height: 16px;
     margin: 0 2rem 0.7rem 0.1rem;
 }
+
 .bullet-logo svg {
     font-size: 26px;
     padding-right: 3px;
 }
+
 .bullet-icons {
     width: 45px;
     height: 100%;
@@ -153,14 +159,14 @@
 }
 
 .heading-date {
-    background-color: var(--brown);
+    background-color: var(--dark-bronze);
     padding: 2px 8px;
     font-family: "Roboto-Bold", sans-serif;
     font-size: 0.95rem;
     display: flex;
     align-items: center;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 15px;
     color: var(--light-tan);
 }
 

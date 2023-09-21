@@ -31,7 +31,7 @@ const ProjectStyle = styled.div`
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: var(--dark-bronze);
+    background-color: var(--charcoal);
     color: var(--peach);
     z-index: 10;
     right: 60px;

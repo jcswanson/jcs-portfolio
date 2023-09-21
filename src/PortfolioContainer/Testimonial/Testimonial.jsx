@@ -68,7 +68,7 @@ export default function Testimonial(props) {
                     </p>{" "}
                   </div>{" "}
                   <div className="client-info">
-                    <h5>- Glen Olson </h5>{" "}
+                    <h5>Glen Olson </h5>{" "}
                     <p>Head of Quality at DASCO Engineering </p>{" "}
                   </div>{" "}
                 </div>{" "}
@@ -90,8 +90,8 @@ export default function Testimonial(props) {
                     </p>{" "}
                   </div>{" "}
                   <div className="client-info">
-                    <h5>- Pooja Muthuraj </h5>{" "}
-                    <p>Communications Lead Intern at FGDC GeoPathways </p>{" "}
+                    <h5>Pooja Muthuraj</h5>{" "}
+                    <p>Communications Lead Intern at FGDC GeoPathways</p>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -111,8 +111,8 @@ export default function Testimonial(props) {
                     </p>{" "}
                   </div>{" "}
                   <div className="client-info">
-                    <h5>- Jordan Loudis </h5>{" "}
-                    <p> Full Stack Developer at Xpanxion </p>{" "}
+                    <h5>Jordan Loudis</h5>{" "}
+                    <p>Full Stack Developer at Xpanxion</p>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -130,8 +130,8 @@ export default function Testimonial(props) {
                     </p>{" "}
                   </div>{" "}
                   <div className="client-info">
-                    <h5>- Ken Patterson </h5>{" "}
-                    <p> Quality Engineer at DASCO Engineering </p>{" "}
+                    <h5>Ken Patterson</h5>{" "}
+                    <p>Quality Engineer at DASCO Engineering</p>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -148,8 +148,8 @@ export default function Testimonial(props) {
                     </p>{" "}
                   </div>{" "}
                   <div className="client-info">
-                    <h5>- Joshua Feland </h5>{" "}
-                    <p> Store Manager at Pacific Coast Hobbies </p>{" "}
+                    <h5>Joshua Feland</h5>{" "}
+                    <p>Store Manager at Pacific Coast Hobbies</p>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

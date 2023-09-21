@@ -1,19 +1,36 @@
 :root {
     /* jcswanson.com colors */
-    --brown: #705213;
-    --light-tan: #ffecc7;
-    --peach: #f8954a;
-    --light-brown: #c98448;
-    --dark-bronze: #524f48;
-    --skill-color: #41ff83;
+    --brown: #722a12;
+    --light-tan: #fff6ea;
+    --peach: #ff7d00;
+    --light-brown:  rgb(231, 187, 104);
+    --dark-bronze: #1b7d8b;
+    --skill-color: #96ffaf;
     --skill-bg: #f41a1a;
-    --charcoal: #2e2d2a;
-    --khaki-tan: #cab27e;
+    --charcoal: #001524ff;
+    --light-charcoal: rgba(0, 21, 36, 0.863);
+    --khaki-tan: rgb(255, 182, 81);
     --nav-dark: #6c6c6c;
-    --nav-light: #fff599;
+    --nav-light: #ffe1b8;
     --error-message: #ff2525d1;
     --toast-error: #e44f4ffa;
     --toast-shadow: #9c9c9cdb;
     --toast-success: #540cbf;
     --loader-color: #7b00fe;
+
+    /*
+
+--rich-black: #001524ff;
+--caribbean-current: #15616dff;
+--papaya-whip: #ffecd1ff;
+--orange-wheel: #ff7d00ff;
+--sienna: #78290fff;
+
+
+--rich-black: hsla(205, 100%, 7%, 1);
+--caribbean-current: hsla(188, 68%, 25%, 1);
+--papaya-whip: hsla(35, 100%, 91%, 1);
+--orange-wheel: hsla(29, 100%, 50%, 1);
+--sienna: hsla(15, 78%, 26%, 1);
+*/
 }

@@ -44,7 +44,9 @@
     margin: 0 30px 0 0;
     color: var(--charcoal);
 }
-
+.header-option-seperator:hover {
+   color: var(--dark-bronze);
+}
 .selected-header-option {
     color: var(--peach);
 }
@@ -95,6 +97,9 @@
     .selected-header-option {
         color: var(--peach);
     }
+    .header-option-seperator:hover {
+        color: var(--dark-bronze);
+    }
     .header-hamburger-bars {
         font-size: 2rem;
         cursor: pointer;
@@ -102,7 +107,7 @@
         color: var(--charcoal);
     }
     .header-hamburger-bars:hover {
-        color: var(--dark-bronze);
+        color: var(--light-charcoal);
     }
     .show-hamburger-options {
         left: 0px;
