@@ -6,7 +6,7 @@ import {
 import ScrollService from "../../../Utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import JCSlogo from "../../../assets/images/Home/logos/JCS-logo.png";
+import JCSlogo from "../../../assets/images/Home/logos/JCS-logo-v2-transp.png";
 import "./Header.css";
 
 export default function Header() {
