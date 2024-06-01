@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<script>
+    (function (n, i, v, r, s, c, x, z) { x = window.AwsRumClient = { q: [], n: n, i: i, v: v, r: r, c: c }; window[n] = function (c, p) { x.q.push({ c: c, p: p }); }; z = document.createElement('script'); z.async = true; z.src = s; document.head.insertBefore(z, document.head.getElementsByTagName('script')[0]); })(
+        'cwr',
+        '84e01aa7-c18e-4361-a76a-fb6572d30b21',
+        '1.0.0',
+        'us-west-1',
+        '../src/assets/cwr.js',
+        {
+            sessionSampleRate: 1,
+            identityPoolId: "us-west-1:93e283df-2f9a-4e76-be46-c120d9215aec",
+            endpoint: "https://dataplane.rum.us-west-1.amazonaws.com",
+            telemetries: ["performance", "errors"],
+            allowCookies: true,
+            enableXRay: true
+        }
+    );
+</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#221826" />
